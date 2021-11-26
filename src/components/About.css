@@ -1,0 +1,148 @@
+/* About Section */
+.about {
+  background: white;
+  position: relative;
+  padding-left: 35px;
+  /* padding-left: 35px; */
+  padding-right: 35px;
+  padding-top: 3rem;
+  padding-bottom: 15rem;
+  z-index: -1;
+}
+
+/* --------QUOTE BACKGROUND -----------  */
+
+.about-quote {
+  /* background-color: red; */
+  position: absolute;
+  bottom: 65%;
+  width: 80vw;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 0;
+  text-shadow: 10px 10px 15px rgb(223, 223, 223);
+}
+
+.about-upper-quote {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-start;
+  font-size: clamp(35px, 8vw, 70px);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.about-lower-quote {
+  /* background-color: purple; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: clamp(35px, 8vw, 70px);
+  font-weight: 600;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+/* --------------CONTENT --------------- */
+.cvpic {
+  width: 16rem;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.about-wrap {
+  background-color: white;
+  position: relative;
+  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.5);
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  z-index: 3;
+}
+
+.about-heading {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.picwrap {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  /* background-color: blue; */
+  margin-left: 33px;
+  margin-right: 33px;
+  text-align: justify;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 1);
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 700px) {
+  .about-wrap {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .about-heading {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about-text {
+    font-size: 14px;
+  }
+
+  .about {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-text {
+    font-size: 12.8px;
+  }
+
+  .about {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .about {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .about-text {
+    /* background-color: pink; */
+    font-size: 12px;
+  }
+}

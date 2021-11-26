@@ -1,0 +1,94 @@
+/* Portfolio Section */
+
+.portfolio-wrap {
+  background: var(--gray);
+  padding: 3rem 0;
+}
+
+.portfolio-wrap h1 {
+  color: var(--orange);
+}
+
+.portfolio-wrap .container {
+  background-color: red;
+}
+
+.portfolio-wrap .row {
+  background-color: purple;
+}
+
+.portfolio-wrap .img-box {
+  position: relative;
+  margin: 1rem;
+  background: pink;
+}
+
+.portfolio-img {
+  width: 15rem;
+  border: 1px solid var(--orange);
+  padding: 0 0.5rem;
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--dark-grey);
+  width: 15rem;
+  height: 100%;
+  top: 0;
+  border: 1px solid var(--hover-red);
+  cursor: pointer;
+}
+
+.img-box:hover .overflow {
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
+
+.port-icon {
+  position: relative;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.img-box:hover .port-icon {
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
+
+.img-popupbox {
+  width: 20rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.hyper-link:hover {
+  color: var(--red);
+}
+
+.popupbox-wrapper {
+  top: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .img-popupbox {
+    width: 60%;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .img-popupbox {
+    width: 65%;
+  }
+}
