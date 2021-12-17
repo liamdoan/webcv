@@ -9,7 +9,7 @@ function CardItem(props) {
 
     useEffect(() => {
         Aos.init({})
-      }, [])
+      }, []) 
   
     return (
         <>

@@ -133,14 +133,14 @@ font-size: 15px;
 outline: none;
 border: 1px solid black;
 cursor: pointer;
-transition: all 0.2s ease-in-out;
+transition: all 0.5s ease-in-out;
 text-decoration: none;
 text-transform: uppercase;
 font-weight: 400;
 letter-spacing: 0.2px;
 
 &:hover{
-transition: all 0.2s ease-in-out;
+transition: all 0.5s ease-in-out;
 background: #ad974f;
 color: white;
 border: 1px solid #ad974f;

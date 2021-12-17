@@ -5,7 +5,8 @@ import project1 from '../img/thumbnail1.jpg'
 import project2 from '../img/thumbnail2.jpg'
 import project3 from '../img/thumbnail3.JPG'
 import project4 from '../img/thumbnail4.jpg'
-import project5 from '../img/project-5.jpg'
+import project5 from '../img/thumbnail5.JPG'
+import project6 from '../img/thumbnail6.jpg'
 import {PopupboxManager, PopupboxContainer} from 'react-popupbox'
 import "react-popupbox/dist/react-popupbox.css"
 
@@ -138,21 +139,47 @@ function MyWork() {
     const openPopup5 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={project5} alt="photography-portfolio" />
-            <p className="project-desc">A photography portfolio as an initial lesson to apply and combine Javascript, HTML, CSS/SCSS 
-                skills into a real project.
+            <img className="img-popupbox" src={project5} alt="food-recipes-app" />
+            <p className="project-desc">A food recipes app built with React focused on API fetching,  instant filtering function and 3D effect design.
             </p>
             <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/personal-portfolio")}>https://github.com/liamdoan/personal-portfolio</a>
+                                onClick={() => window.open("https://github.com/liamdoan/food_recipe_3d_design")}>https://github.com/liamdoan/food_recipe_3d_design</a>
             <br/>
             <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://liamdoan.github.io/personal-portfolio/")}>https://liamdoan.github.io/personal-portfolio/</a>
+                                onClick={() => window.open("https://liamdoan.github.io/food_recipe_3d_design/")}>https://liamdoan.github.io/food_recipe_3d_design/</a>
             </>
         )
     PopupboxManager.open({content})
 };
 
     const configProject5 = {
+        titleBar: {
+            enable: true,
+            text: "",
+        },
+        fadeIn: true,
+        fadeinSpeed: 500
+    };     
+
+
+    // -----------------------------Project 6 
+    const openPopup6 = () => {
+        const content = (
+            <>
+            <img className="img-popupbox" src={project6} alt="weather-app" />
+            <p className="project-desc">A weather app built with React, using API fetching with the ability to change background based on certain temperature.
+            </p>
+            <b>Github:</b> <a className="hyper-link" 
+                                onClick={() => window.open("https://github.com/liamdoan/weather_app")}>https://github.com/liamdoan/weather_app</a>
+            <br/>
+            <b>Live demo:</b> <a className="hyper-link" 
+                                onClick={() => window.open("https://liamdoan.github.io/weather_app/")}>https://liamdoan.github.io/weather_app/</a>
+            </>
+        )
+    PopupboxManager.open({content})
+};
+
+    const configProject6 = {
         titleBar: {
             enable: true,
             text: "",
@@ -191,22 +218,24 @@ function MyWork() {
                                 text="ABC Highend Restaurant Website"
                                 label="React"
                                 path="/services"
-                                number="2"/>
-                    </ul>
-
-                    <ul className="cards-items"
-                        // style={{transform: `translateY(${offsetY * 0.05}px)`}}
-                                >
+                                number="2"
+                                />
                             <CardItem
-                            onClick={openPopup3}
+                                onClick={openPopup3}
                                 src={project3}
                                 text="ABC Photography Service Website"
                                 label="React" 
                                 path="/services"
                                 number="3"
                                 />
+                    </ul>
+
+                    <ul className="cards-items"
+                        // style={{transform: `translateY(${offsetY * 0.05}px)`}}
+                                >
+                            
                             <CardItem 
-                            onClick={openPopup4}
+                                onClick={openPopup4}
                                 src={project4}
                                 text="To-do Web App"
                                 label="JavaScript/HTML/CSS"
@@ -214,12 +243,20 @@ function MyWork() {
                                 number="4"
                                 /> 
                             <CardItem
-                            onClick={openPopup5}
+                                onClick={openPopup5}
                                 src={project5}
-                                text="Photography Portfolio"
-                                label="JavaScript/HTML/CSS/SCSS"
+                                text="Food Recipes App"
+                                label="React"
                                 path="/services"
                                 number="5"
+                                />
+                            <CardItem
+                                onClick={openPopup6}
+                                src={project6}
+                                text="Weather App"
+                                label="React"
+                                path="/services"
+                                number="6"
                                 />
                     </ul>
                 </div>
@@ -230,6 +267,7 @@ function MyWork() {
             <PopupboxContainer {...configProject3}/>
             <PopupboxContainer {...configProject4}/>
             <PopupboxContainer {...configProject5}/>
+            <PopupboxContainer {...configProject6}/>
         </div>
     )
 }
