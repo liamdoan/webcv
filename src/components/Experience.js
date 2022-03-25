@@ -21,8 +21,7 @@ const Experience = () => {
                         <p className="work-period">
                             May 2020 - November 2020
                         </p>
-                        <p className="work-desc">Witview software collects product review data from the internet and sums up for consumers 
-                        to understand "What the Internet Thinks" of each product. The role helped Witview’s 
+                        <p className="work-desc">The role helped Witview’s 
                         customers witness 7.5% uplift in conversion rate and some reach to 30%. The results were
                         based on extensive A/B testing performed with each customer. This position focused on: </p>
                         <div className="list-info">

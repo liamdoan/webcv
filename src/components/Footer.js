@@ -34,7 +34,7 @@ const Footer = () => {
                             <p>33200, Tampere</p>
                         </div>
                         <div className="d-flex">
-                            <a className="phone" href="tel:123-456-789">(+358) 469-456-747</a>
+                            <a className="phone" href="tel:123-456-789">(+358) 406-735-587</a>
                         </div>
                         <div className="d-flex">
                             <p>lamdoan9898@gmail.com</p>

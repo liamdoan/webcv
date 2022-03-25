@@ -16,8 +16,7 @@ const Header = () => {
     }, [])
 
  
-    return (
-    
+    return ( 
         <div id="home" className="header-wrap"
         > 
             <h1 className="big-title">developer</h1>
@@ -42,7 +41,7 @@ const Header = () => {
                                 data-aos-duration='900'
                                 /> 
                     <Link 
-                        className="btn-main-offer header-btn"
+                        className="header-btn"
                         to="portfolio" 
                         smooth={true}
                         duration={1000} 

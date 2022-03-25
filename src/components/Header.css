@@ -115,7 +115,6 @@
 }
 
 .header-btn {
-  /* border: 1px solid var(--red); */
   border: 1px solid black;
   text-transform: uppercase;
   padding: 10px 25px 10px 25px;
@@ -125,15 +124,15 @@
   margin: 2rem;
   font-weight: 400;
   letter-spacing: 0.2px;
-  transition: 0.5s ease-in-out;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .header-btn:hover {
   background-color: #ad974f;
   color: white;
   border: 1px solid #ad974f;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Particles JS */

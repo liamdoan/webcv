@@ -124,14 +124,14 @@ align-items: center;
 
 export const NavBtnLink = styled(LinkScroll)`
 /* border-radius: 50px; */
-background: ${({scrollNav}) => (scrollNav ? 'white' : 'transparent') };
+background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent') };
 white-space: nowrap;
 padding: 10px 22px;
 /* color: #010606; */
-color: black;
+color: ${({scrollNav}) => (scrollNav ? 'white' : 'black') };
 font-size: 15px;
 outline: none;
-border: 1px solid black;
+border: ${({scrollNav}) => (scrollNav ? '1px solid white' : '1px solid black') };
 cursor: pointer;
 transition: all 0.5s ease-in-out;
 text-decoration: none;

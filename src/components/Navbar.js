@@ -111,7 +111,8 @@ const Navbar = ({toggle}) => {
                                     duration={1000} spy={true}
                                     exact='true' offset={-50}
                                     scrollNav={scrollNav}>
-                                        Contact</NavBtnLink>
+                                        Contact
+                        </NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

@@ -47,10 +47,10 @@ const About = () => {
                         data-aos-duration="700"
                         // data-aos-once="true"
                         data-aos-delay='400'>
-                    Always strive to do my best on the job, highly valued team-playing skills which will help in completing and taking future projects even further. I’m interested in modern marketing platforms, very enthusiastic in making my learning curve always go upwards by getting experiences from my seniors on the job as well as discussing with cross-competence colleagues to deliver the best impact on clients’ business.
+                    Always target beyond the peak on the job, highly valued team-playing skills which will help in completing and taking future projects even further. I’m interested in modern digital platforms, very enthusiastic in making my learning curve always go upwards by getting experiences from my seniors as well as discussing with cross-competence colleagues to deliver the best impact on clients’ business.
                         <br />
                         <br />
-                    A backgrounded Automation engineering student with knowledge of smart tech and automation process. I am passionate and equipped with designing eyes, coding skills for front-end stack with JavaScript, HTML, CSS/SCSS and React. The searching and learning of front-end design have given me a diverse point of view of potential client requests, as well as the initiative to look for new solutions, stay up to date with new technology trends, development, and the strong motivation to learn more.
+                    A backgrounded Automation engineering student with knowledge of smart tech and automation process. I am passionate and equipped with technical skills, designing eyes for front-end stack with JavaScript, HTML, CSS/SCSS and React. The searching and learning of front-end development have given me a diverse point of view of potential client requests, as well as the initiative to look for new solutions, stay up to date with new technology trends, development, and specially the strong motivation to learn more.
                     </p>
                 </div>
             </div>
