@@ -208,7 +208,7 @@ function MyWork() {
                                 onClick={() => window.open("https://github.com/liamdoan/zarosen-store-full-stack")}>https://github.com/liamdoan/zarosen-store-full-stack</a>
             <br/>
             <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://zarosen-clothing-store.herokuapp.com/")}>https://zarosen-clothing-store.herokuapp.com/</a>
+                                onClick={() => window.open("https://zarosen-store-to-push-frontend.vercel.app/")}>https://zarosen-store-to-push-frontend.vercel.app/</a>
             </>
         )
     PopupboxManager.open({content})
