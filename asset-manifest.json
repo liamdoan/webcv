@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/webcv/static/css/main.3e9e2cd3.chunk.css",
-    "main.js": "/webcv/static/js/main.5d3463ab.chunk.js",
-    "main.js.map": "/webcv/static/js/main.5d3463ab.chunk.js.map",
+    "main.css": "/webcv/static/css/main.7a3b93eb.chunk.css",
+    "main.js": "/webcv/static/js/main.0a4ea5a9.chunk.js",
+    "main.js.map": "/webcv/static/js/main.0a4ea5a9.chunk.js.map",
     "runtime-main.js": "/webcv/static/js/runtime-main.7015e5c3.js",
     "runtime-main.js.map": "/webcv/static/js/runtime-main.7015e5c3.js.map",
     "static/css/2.2d05c66d.chunk.css": "/webcv/static/css/2.2d05c66d.chunk.css",
-    "static/js/2.f6ada141.chunk.js": "/webcv/static/js/2.f6ada141.chunk.js",
-    "static/js/2.f6ada141.chunk.js.map": "/webcv/static/js/2.f6ada141.chunk.js.map",
+    "static/js/2.794dbb63.chunk.js": "/webcv/static/js/2.794dbb63.chunk.js",
+    "static/js/2.794dbb63.chunk.js.map": "/webcv/static/js/2.794dbb63.chunk.js.map",
     "index.html": "/webcv/index.html",
     "static/css/2.2d05c66d.chunk.css.map": "/webcv/static/css/2.2d05c66d.chunk.css.map",
-    "static/css/main.3e9e2cd3.chunk.css.map": "/webcv/static/css/main.3e9e2cd3.chunk.css.map",
-    "static/js/2.f6ada141.chunk.js.LICENSE.txt": "/webcv/static/js/2.f6ada141.chunk.js.LICENSE.txt",
+    "static/css/main.7a3b93eb.chunk.css.map": "/webcv/static/css/main.7a3b93eb.chunk.css.map",
+    "static/js/2.794dbb63.chunk.js.LICENSE.txt": "/webcv/static/js/2.794dbb63.chunk.js.LICENSE.txt",
     "static/media/adobe-logo-1.b0554edf.svg": "/webcv/static/media/adobe-logo-1.b0554edf.svg",
     "static/media/Experience.css": "/webcv/static/media/background-1.120377db.jpg",
     "static/media/MyWork.css": "/webcv/static/media/background1-1.051e4a2b.jpg",
-    "static/media/cvpic.f0bd76b5.png": "/webcv/static/media/cvpic.f0bd76b5.png",
+    "static/media/cvpic.4272bf7e.png": "/webcv/static/media/cvpic.4272bf7e.png",
     "static/media/heading-logo2.64fa1209.svg": "/webcv/static/media/heading-logo2.64fa1209.svg",
+    "static/media/jsts-logo.7768051e.png": "/webcv/static/media/jsts-logo.7768051e.png",
     "static/media/thumbnail-1.7bcade46.jpg": "/webcv/static/media/thumbnail-1.7bcade46.jpg",
     "static/media/thumbnail-2.cc306654.JPG": "/webcv/static/media/thumbnail-2.cc306654.JPG",
     "static/media/thumbnail-3.9dc82708.jpg": "/webcv/static/media/thumbnail-3.9dc82708.jpg",
@@ -28,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.7015e5c3.js",
     "static/css/2.2d05c66d.chunk.css",
-    "static/js/2.f6ada141.chunk.js",
-    "static/css/main.3e9e2cd3.chunk.css",
-    "static/js/main.5d3463ab.chunk.js"
+    "static/js/2.794dbb63.chunk.js",
+    "static/css/main.7a3b93eb.chunk.css",
+    "static/js/main.0a4ea5a9.chunk.js"
   ]
 }
