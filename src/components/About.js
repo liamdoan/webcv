@@ -50,7 +50,7 @@ const About = () => {
                     Always target beyond the peak on the job, highly valued team-playing skills which will help in completing and taking future projects even further. I’m interested in modern digital platforms, very enthusiastic in making my learning curve always go upwards by getting experiences from my seniors as well as discussing with cross-competence colleagues to deliver the best impact on clients’ business.
                         <br />
                         <br />
-                    A backgrounded Automation engineering student with knowledge of smart tech and automation process. I am passionate and equipped with technical skills, designing eyes for front-end stack with JavaScript, HTML, CSS/SCSS and React. The searching and learning of front-end development have given me a diverse point of view of potential client requests, as well as the initiative to look for new solutions, stay up to date with new technology trends, development, and specially the strong motivation to learn more.
+                    With 2+ years of experience as a software engineer, I equipped with technical skills, designing eyes for projects with TypeScript/JavaScript, HTML, CSS/SCSS and React. The searching and learning have given me a diverse point of view of potential client requests, as well as the initiative to look for new solutions, stay up to date with new technology trends, development, and specially the strong motivation to learn more.
                     </p>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Experience.css'
 
+// future develop with data mappings
 const Experience = () => {
     return (
         <div id="experience" className="experience"> 
@@ -8,6 +9,47 @@ const Experience = () => {
                 <h1>Experience</h1>
            </div> 
            <div className="container experience-wrap">
+            {/* WORK 3 */}
+            <div className="timeline-block timeline-block-left">
+                    <div className="marker">
+                    </div>
+                    <div className="timeline-content" 
+                            data-aos='fade-left' 
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                            data-aos-delay='200'>
+                        <h3>Software Engineer, Dream Broker Oy, Helsinki</h3>
+                        <p className="work-period">
+                            August 2022 - current
+                        </p>
+                        <p className="work-desc">Contribute to Research and Development department of Dream Broker Oy:</p>
+                        <div className="list-info">
+                            <li className="dot">
+                            </li>
+                            <li className="li-info">maintain, add features, fix existing bugs of legacy Online Video Platform with EmberJS and FreeMarker Template FTL for frontend and backend.</li>
+                        </div>
+                        <div className="list-info">
+                            <li className="dot">
+                            </li>
+                            <li className="li-info">develop new, scalable, maintainable features for TypeScript-based React project, which directly contributes to increased product sales.</li>
+                        </div>
+                        <div className="list-info">
+                            <li className="dot">
+                            </li>
+                            <li className="li-info">integrate company’s React project as an NPM package into existing applications.</li>
+                        </div>
+                        <div className="list-info">
+                            <li className="dot">
+                            </li>
+                            <li className="li-info">develop an independent React project from NPM package, which deeply focuses on understanding of modular design and reusability.</li>
+                        </div> 
+                        <div className="list-info">
+                            <li className="dot">
+                            </li>
+                            <li className="li-info">refactor existing codebases to improve accessibility, performance and scalability, which aims to reduce bugs, simplify future enhancement and facilitate easier maintenance.</li>
+                        </div> 
+                    </div>
+                </div>
                {/* WORK 2 */}
                 <div className="timeline-block timeline-block-right">
                     <div className="marker">
@@ -17,7 +59,7 @@ const Experience = () => {
                             data-aos-duration="1000"
                             data-aos-once="true"
                             data-aos-delay='200'>
-                        <h3>Data Manager at Witvew Oy, Tampere</h3>
+                        <h3>Data Manager, Witview Oy, Tampere</h3>
                         <p className="work-period">
                             May 2020 - November 2020
                         </p>
@@ -59,7 +101,7 @@ const Experience = () => {
                             data-aos-delay='400'>
                         <h3>Bachelor of Electrical and Automation Engineering, HAMK University of Applied Sciences, Valkeakoski</h3>
                         <p className="work-period">
-                            2016 - current
+                            2016 - 2022
                         </p>
                         <p className="work-desc">
                             Backgrounded and acquired knowledge of smart technology and automation process. Some noticeable achievements during study time can include:

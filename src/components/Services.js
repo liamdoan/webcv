@@ -3,6 +3,7 @@ import './Services.css'
 import { faCss3Alt, faHtml5, faJs, faReact, faUikit } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AdobeLogo from '../img/adobe-logo-1.svg'
+import JSTSLogo from '../img/jsts-logo.png'
  
 const Services = () => {
 
@@ -64,9 +65,9 @@ const Services = () => {
                             <div className="box-wrap">
                                 <div className="box-js">
                                     <div className="icon-wrap">
-                                        <FontAwesomeIcon className="icon-js" icon={faJs} size ="2x" />
+                                        <img className="icon-jsts" src={JSTSLogo} alt="jsts-logo" />
                                     </div>
-                                    <h3>JavaScript</h3>
+                                    <h3>TypeScript/JavaScript</h3>
                                     <p>Provide logic and functions for the sites</p>
                                 </div>
                             </div>
