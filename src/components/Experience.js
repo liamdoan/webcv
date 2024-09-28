@@ -22,32 +22,54 @@ const Experience = () => {
                         <p className="work-period">
                             August 2022 - current
                         </p>
-                        <p className="work-desc">Contribute to Research and Development department of Dream Broker Oy:</p>
+                        <p className="work-desc">Contribute to R&D department of Dream Broker Oy:</p>
                         <div className="list-info">
                             <li className="dot">
                             </li>
-                            <li className="li-info">maintain, add features, fix existing bugs of legacy Online Video Platform with EmberJS and FreeMarker Template FTL for frontend and backend.</li>
+                            <li className="li-info">
+                                Oversee frontend development across multiple platforms for company’s legacy product.
+                            </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
-                            <li className="li-info">develop new, scalable, maintainable features for TypeScript-based React project, which directly contributes to increased product sales.</li>
+                            <li className="li-info">
+                                Implement new, scalable, maintainable features and UI/UX from designers for 
+                                TypeScript-based React projects, which directly contributes to increased product sales.
+                            </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
-                            <li className="li-info">integrate company’s React project as an NPM package into existing applications.</li>
+                            <li className="li-info">
+                                Refactor, maintain existing ReactJS codebases to improve performance, accessibility and 
+                                scalability, aiming to better readability, simplify future enhancement and facilitate easier 
+                                maintenance.
+                            </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
-                            <li className="li-info">develop an independent React project from NPM package, which deeply focuses on understanding of modular design and reusability.</li>
+                            <li className="li-info">
+                                Integrate React project as an NPM package into existing applications.
+                            </li>
                         </div> 
                         <div className="list-info">
                             <li className="dot">
                             </li>
-                            <li className="li-info">refactor existing codebases to improve accessibility, performance and scalability, which aims to reduce bugs, simplify future enhancement and facilitate easier maintenance.</li>
-                        </div> 
+                            <li className="li-info">
+                                Develop new independent React project from NPM package to be used across products 
+                                and customers’ platforms, deeply focusing on project’s modular design and reusability.
+                            </li>
+                        </div>
+                        <div className="list-info">
+                            <li className="dot">
+                            </li>
+                            <li className="li-info">
+                                Maintain, add features, fix existing bugs for legacy Online Video Platform with EmberJS 
+                                and FreeMarker Template FTL for frontend and backend.
+                            </li>
+                        </div>
                     </div>
                 </div>
                {/* WORK 2 */}
@@ -99,43 +121,26 @@ const Experience = () => {
                             data-aos-duration="1000"
                             data-aos-once="true"
                             data-aos-delay='400'>
-                        <h3>Bachelor of Electrical and Automation Engineering, HAMK University of Applied Sciences, Valkeakoski</h3>
+                        <h3>Researcher, HAMK Tech Research Unit, HAMK University of Applied Sciences</h3>
                         <p className="work-period">
-                            2016 - 2022
+                            August 2018 - January 2019
                         </p>
                         <p className="work-desc">
-                            Backgrounded and acquired knowledge of smart technology and automation process. Some noticeable achievements during study time can include:
+                            The goal is to construct a proposal of a small-scale energy efficiency ecosystem for a public building. The role focused on:
                         </p>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <div className="li-and-sub-info">
-                                <li className="li-info">freeCodeCamp:</li>
-                                <li className="sub-li-info">Front End Development Libraries, <span className="secondary-text">May 2021</span></li>
-                                <li className="sub-li-info">JavaScript Algorithms and Data Structures, <span className="secondary-text">April 2021</span></li>
-                                <li className="sub-li-info">Responsive Web Design, <span className="secondary-text">March 2021</span></li>
+                                <li className="li-info">designing the prototype of user interface (UI) for displaying data</li>
+                                {/*<li className="sub-li-info">Front End Development Libraries, <span className="secondary-text">May 2021</span></li>*/}
                             </div>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
-                            <li className="li-info">Front-end Developer - <span className="secondary-text">LUT University - Fitech.io, February 2021</span></li>
+                            <li className="li-info">researching the ability to integrate solar power with other renewable energy sources</li>
                         </div>
-                        <div className="list-info">
-                            <li className="dot">
-                            </li>
-                            <li className="li-info">Energy Efficient Ecosystem - <span className="secondary-text">HAMK Tech Reseach Unit, August 2018</span></li>
-                        </div>
-                        <div className="list-info">
-                            <li className="dot">
-                            </li>
-                            <li className="li-info">Innovation Challenges - <span className="secondary-text">University of Tampere, December 2019</span></li>
-                        </div> 
-                        <div className="list-info">
-                            <li className="dot">
-                            </li>
-                            <li className="li-info">Elements of AI - <span className="secondary-text">University of Helsinki, July 2018</span></li>
-                        </div> 
                     </div>
                 </div>
                 {/* <div className="timeline-block timeline-block-right">
