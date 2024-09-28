@@ -203,8 +203,8 @@
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 10px;
   height: 9.5rem;
+  margin-bottom: 10px;
   border-bottom: 15px solid #46d0f3;
   display: flex;
   flex-direction: column;
@@ -356,6 +356,30 @@
   transform: translate(-47%, -50%);
   width: 50px;
   height: 50px;
+}
+
+.box-vagrant {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: #2E71E5;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 9.5rem;
+  margin-bottom: 10px;
+  border-bottom: 15px solid #2E71E5;
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out;
+}
+.icon-vagrant {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  width: 35px;
+  height: 35px;
 }
 
 .box-jira {
@@ -659,6 +683,38 @@
   background: black;
 }
 
+/* Vagrant */
+.box-vagrant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white,
+    #2E71E5 80%,
+    rgb(218, 217, 217)
+  );
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.box-vagrant:hover::before {
+  transform: translateY(-45%);
+}
+
+.box-vagrant:hover {
+  /* background: rgb(158, 78, 208); */
+  border-bottom: 3px solid var(--dark);
+  border-bottom-right-radius: 40%;
+  transition: 0.5s ease-in-out;
+  color: whitesmoke;
+  background: black;
+}
+
 /* Jira */
 .box-jira::before {
   content: "";
@@ -816,6 +872,11 @@
 }
 
 .box-mongo:hover .icon-wrap {
+  background: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
+.box-vagrant:hover .icon-wrap {
   background: whitesmoke;
   transition: 0.3s ease-in-out;
 }

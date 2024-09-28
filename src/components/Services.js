@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AdobeLogo from '../img/adobe-logo-1.svg'
 import JSTSLogo from '../img/logo-jsts.png'
 import MongoLogo from '../img/logo-mongo.svg'
+import VagrantLogo from '../img/logo-vagrant.png'
  
 const Services = () => {
 
@@ -145,6 +146,21 @@ const Services = () => {
                                         <img className="icon-mongo" src={MongoLogo} alt="mongo-logo" />
                                     </div>
                                     <h3>MongoDB</h3>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-4"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className="box-wrap">
+                                <div className="box-vagrant">
+                                    <div className="icon-wrap">
+                                        <img className="icon-vagrant" src={VagrantLogo} alt="mongo-logo" />
+                                    </div>
+                                    <h3>Vagrant VMs</h3>
                                     {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
