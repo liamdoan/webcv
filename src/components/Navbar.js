@@ -86,7 +86,7 @@ const Navbar = ({toggle}) => {
                                     duration={1000} spy={true}
                                     exact='true' offset={-70}
                                     scrollNav={scrollNav}>
-                                Skills
+                                Tools
                             </NavLinks>
                         </NavItem>
                         <NavItem>

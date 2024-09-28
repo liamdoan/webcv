@@ -53,7 +53,7 @@ const Footer = () => {
                                 <Link className="footer-nav"
                                     to="services" smooth={true}
                                     duration={1000} spy={true}
-                                    exact='true' offset={-80}>Skills</Link>
+                                    exact='true' offset={-80}>Tools</Link>
                             </div>
                             <div className="col">
                             <Link className="footer-nav"
