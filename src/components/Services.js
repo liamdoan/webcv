@@ -43,7 +43,7 @@ const Services = () => {
                     <div className="row services-row"
                         style={{transform: `translateY(-${offsetY * 0.03}px)`}}
                         >
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-6"
                                 data-aos='flip-left'
                                 data-aos-duration="700"
                                 data-aos-once="true"
@@ -54,11 +54,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-react" icon={faReact} size ="2x" />
                                     </div>
                                     <h3>React</h3>
-                                    <p>Create manageable sites with multiple reusable components</p>
+                                    {/* <p>Create manageable sites with multiple reusable components</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -69,11 +69,11 @@ const Services = () => {
                                         <img className="icon-jsts" src={JSTSLogo} alt="jsts-logo" />
                                     </div>
                                     <h3>TypeScript/JavaScript</h3>
-                                    <p>Provide logic and functions for the sites</p>
+                                    {/* <p>Provide logic and functions for the sites</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -84,11 +84,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-html" icon={faHtml5} size ="2x" />
                                     </div>
                                     <h3>HTML</h3>
-                                    <p>Build skeleton for the sites</p>
+                                    {/* <p>Build skeleton for the sites</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -99,11 +99,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-css" icon={faCss3Alt} size ="2x" />
                                     </div>
                                     <h3>CSS/SASS</h3>
-                                    <p>Clothe the skeleton with striking and aesthetic design</p>
+                                    {/* <p>Clothe the skeleton with striking and aesthetic design</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -114,11 +114,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-node" icon={faNode} size ="2x" />
                                     </div>
                                     <h3>NodeJS</h3>
-                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -130,11 +130,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-express" icon={faNodeJs} size ="1x" />
                                     </div>
                                     <h3>ExpressJS</h3>
-                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -145,11 +145,11 @@ const Services = () => {
                                         <img className="icon-mongo" src={MongoLogo} alt="mongo-logo" />
                                     </div>
                                     <h3>MongoDB</h3>
-                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -160,11 +160,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-jira" icon={faJira} size ="2x" />
                                     </div>
                                     <h3>JIRA</h3>
-                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -175,11 +175,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-gitlab" icon={faGitlab} size ="2x" />
                                     </div>
                                     <h3>GitLab</h3>
-                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -190,11 +190,11 @@ const Services = () => {
                                         <FontAwesomeIcon className="icon-mui" icon={faUikit} size ="2x" />
                                     </div>
                                     <h3>React Material-UI</h3>
-                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="1000"
                                 data-aos-once="true"
@@ -205,7 +205,7 @@ const Services = () => {
                                         <img className="icon-adobe" src={AdobeLogo} alt="adobe-logo" />
                                     </div>
                                     <h3>Adobe Creative Cloud</h3>
-                                    <p>Independently work for specific designs</p>
+                                    {/* <p>Independently work for specific designs</p> */}
                                 </div>
                             </div>
                         </div>
