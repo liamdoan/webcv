@@ -28,10 +28,10 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6 footer-main-info">
                         <div className="d-flex">
-                            <p>Kauppakatu 9 B</p>
+                            <p>Lam Doan</p>
                         </div> 
                         <div className="d-flex">
-                            <p>33200, Tampere</p>
+                            <p>00100, Helsinki</p>
                         </div>
                         <div className="d-flex">
                             <a className="phone" href="tel:123-456-789">(+358) 406-735-587</a>
