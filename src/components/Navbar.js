@@ -94,7 +94,7 @@ const Navbar = ({toggle}) => {
                                     duration={1000} spy={true}
                                     exact='true' offset={-60}
                                     scrollNav={scrollNav}>
-                                Experience
+                                Experiences
                             </NavLinks>
                         </NavItem>
                         <NavItem>

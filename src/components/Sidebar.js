@@ -25,11 +25,11 @@ import LinkedinLogo from "../img/linkedin-icon.png"
                         <SidebarLink to="services" smooth={true}
                                     duration={1000} spy={true}
                                     exact='true' offset={-70}
-                                    onClick={toggle}>Skills</SidebarLink>
+                                    onClick={toggle}>Tools</SidebarLink>
                         <SidebarLink to="experience" smooth={true}
                                     duration={1000} spy={true}
                                     exact='true' offset={-70}
-                                    onClick={toggle}>Experience</SidebarLink>
+                                    onClick={toggle}>Experiences</SidebarLink>
                         
                         <SidebarLink to="about" smooth={true}
                                     duration={1000} spy={true}
