@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import './Services.css'
-import { faCss3Alt, faHtml5, faJs, faReact, faUikit } from '@fortawesome/free-brands-svg-icons'
+import { faCss3Alt, faHtml5, faNode, faNodeJs, faJira, faGitlab, faReact, faUikit } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AdobeLogo from '../img/adobe-logo-1.svg'
-import JSTSLogo from '../img/jsts-logo.png'
+import JSTSLogo from '../img/logo-jsts.png'
+import MongoLogo from '../img/logo-mongo.svg'
  
 const Services = () => {
 
@@ -97,8 +98,84 @@ const Services = () => {
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-css" icon={faCss3Alt} size ="2x" />
                                     </div>
-                                    <h3>CSS/SCSS</h3>
+                                    <h3>CSS/SASS</h3>
                                     <p>Clothe the skeleton with striking and aesthetic design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-sm-6"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className="box-wrap">
+                                <div className="box-node">
+                                    <div className="icon-wrap">
+                                        <FontAwesomeIcon className="icon-node" icon={faNode} size ="2x" />
+                                    </div>
+                                    <h3>NodeJS</h3>
+                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-sm-6"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className="box-wrap">
+                                <div className="box-express">
+                                    <div className="icon-wrap-express">
+                                        <span className='express-span'>express</span>
+                                        <FontAwesomeIcon className="icon-express" icon={faNodeJs} size ="1x" />
+                                    </div>
+                                    <h3>ExpressJS</h3>
+                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-sm-6"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className="box-wrap">
+                                <div className="box-mongo">
+                                    <div className="icon-wrap">
+                                        <img className="icon-mongo" src={MongoLogo} alt="mongo-logo" />
+                                    </div>
+                                    <h3>MongoDB</h3>
+                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-sm-6"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className="box-wrap">
+                                <div className="box-jira">
+                                    <div className="icon-wrap">
+                                        <FontAwesomeIcon className="icon-jira" icon={faJira} size ="2x" />
+                                    </div>
+                                    <h3>JIRA</h3>
+                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 col-sm-6"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className="box-wrap">
+                                <div className="box-gitlab">
+                                    <div className="icon-wrap">
+                                        <FontAwesomeIcon className="icon-gitlab" icon={faGitlab} size ="2x" />
+                                    </div>
+                                    <h3>GitLab</h3>
+                                    <p>Make the sites become more eye-catching and user-friendly in design</p>
                                 </div>
                             </div>
                         </div>

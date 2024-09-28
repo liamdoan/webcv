@@ -176,13 +176,22 @@
   border-radius: 50%;
 }
 
-.icon-wrap-mui {
+.icon-wrap-express {
   position: relative;
   margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
   background: black;
   width: 55px;
   height: 55px;
   border-radius: 50%;
+}
+.icon-wrap-express .express-span {
+  color: white;
+  font-size: 10px;
+  margin-left: 3px;
+  font-weight: 200;
 }
 
 /* ICONS */
@@ -201,7 +210,6 @@
   flex-direction: column;
   transition: 0.8s ease-in-out;
 }
-
 .icon-react {
   color: #61dbfb;
   position: absolute;
@@ -214,13 +222,13 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
-  background: #f0db4f;
+  background: #3178c6;
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
   height: 16rem;
   margin-bottom: 10px;
-  border-bottom: 15px solid #f0db4f;
+  border-bottom: 15px solid #3178c6;
   display: flex;
   flex-direction: column;
   transition: 0.8s ease-in-out;
@@ -249,7 +257,6 @@
   flex-direction: column;
   transition: 0.8s ease-in-out;
 }
-
 .icon-html {
   color: rgb(247, 158, 75);
   position: absolute;
@@ -273,9 +280,124 @@
   flex-direction: column;
   transition: 0.8s ease-in-out;
 }
-
 .icon-css {
   color: #66b5fa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-node {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: #3c873a;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 16rem;
+  margin-bottom: 10px;
+  border-bottom: 15px solid #68a063;
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out;
+}
+.icon-node {
+  color: #7ebe78;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-express {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: #3c873a;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 16rem;
+  margin-bottom: 10px;
+  border-bottom: 15px solid #68a063;
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out;
+}
+.icon-express {
+  color: #88cf81;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.box-mongo {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: rgb(77, 179, 61);
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 16rem;
+  margin-bottom: 10px;
+  border-bottom: 15px solid rgb(77, 179, 61);
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out;
+}
+.icon-mongo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+.box-jira {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: rgb(1,70,179);
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 16rem;
+  margin-bottom: 10px;
+  border-bottom: 15px solid rgb(1,70,179);
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out;
+}
+.icon-jira {
+  color: rgb(0,82,204);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-gitlab {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: #e24329;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 16rem;
+  margin-bottom: 10px;
+  border-bottom: 15px solid #e24329;
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out;
+}
+.icon-gitlab {
+  color: #e24329;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -297,7 +419,6 @@
   flex-direction: column;
   transition: 0.8s ease-in-out;
 }
-
 .icon-mui {
   color: rgb(200, 112, 255);
   position: absolute;
@@ -364,7 +485,7 @@
   left: 0;
   width: 100%;
   height: 200%;
-  background: linear-gradient(to bottom, white, white, #f0db4f 70%, whitesmoke);
+  background: linear-gradient(to bottom, white, white,  #3178c6 70%, whitesmoke);
   transition: 0.3s ease-in-out;
   z-index: -1;
 }
@@ -436,6 +557,165 @@
 
 .box-css:hover {
   /* background: #2c8de2; */
+  border-bottom: 3px solid var(--dark);
+  border-bottom-right-radius: 40%;
+  transition: 0.5s ease-in-out;
+  color: whitesmoke;
+  background: black;
+}
+
+/* NodeJS */
+.box-node::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white,
+    #3c873a 80%,
+    rgb(218, 217, 217)
+  );
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.box-node:hover::before {
+  transform: translateY(-45%);
+}
+
+.box-node:hover {
+  border-bottom: 3px solid var(--dark);
+  border-bottom-right-radius: 40%;
+  transition: 0.5s ease-in-out;
+  color: whitesmoke;
+  background: black;
+}
+
+/* ExpressJS */
+.box-express::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white,
+    #3c873a 80%,
+    rgb(218, 217, 217)
+  );
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.box-express:hover::before {
+  transform: translateY(-45%);
+}
+
+.box-express:hover {
+  /* background: rgb(158, 78, 208); */
+  border-bottom: 3px solid var(--dark);
+  border-bottom-right-radius: 40%;
+  transition: 0.5s ease-in-out;
+  color: whitesmoke;
+  background: black;
+}
+
+/* MongoDB */
+.box-mongo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white,
+    rgb(77, 179, 61) 80%,
+    rgb(218, 217, 217)
+  );
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.box-mongo:hover::before {
+  transform: translateY(-45%);
+}
+
+.box-mongo:hover {
+  /* background: rgb(158, 78, 208); */
+  border-bottom: 3px solid var(--dark);
+  border-bottom-right-radius: 40%;
+  transition: 0.5s ease-in-out;
+  color: whitesmoke;
+  background: black;
+}
+
+/* Jira */
+.box-jira::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white,
+    rgb(1,70,179) 80%,
+    rgb(218, 217, 217)
+  );
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.box-jira:hover::before {
+  transform: translateY(-45%);
+}
+
+.box-jira:hover {
+  /* background: rgb(158, 78, 208); */
+  border-bottom: 3px solid var(--dark);
+  border-bottom-right-radius: 40%;
+  transition: 0.5s ease-in-out;
+  color: whitesmoke;
+  background: black;
+}
+
+/* Gitlab */
+.box-gitlab::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white,
+    #e24329 80%,
+    rgb(218, 217, 217)
+  );
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.box-gitlab:hover::before {
+  transform: translateY(-45%);
+}
+
+.box-gitlab:hover {
+  /* background: rgb(158, 78, 208); */
   border-bottom: 3px solid var(--dark);
   border-bottom-right-radius: 40%;
   transition: 0.5s ease-in-out;
@@ -517,10 +797,44 @@
   transition: 0.3s ease-in-out;
 }
 
+.box-node:hover .icon-wrap {
+  background: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
+.box-express:hover .icon-wrap-express {
+  background: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+.box-express:hover .icon-express {
+  color: #3c873a;
+  transition: 0.3s ease-in-out;
+}
+.box-express:hover .express-span {
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.box-mongo:hover .icon-wrap {
+  background: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
+.box-jira:hover .icon-wrap {
+  background: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
+.box-gitlab:hover .icon-wrap {
+  background: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
 .box-mui:hover .icon-wrap {
   background: whitesmoke;
   transition: 0.3s ease-in-out;
 }
+
 .box-adobe:hover .icon-wrap {
   background: whitesmoke;
   transition: 0.3s ease-in-out;

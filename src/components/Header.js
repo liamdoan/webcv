@@ -27,10 +27,10 @@ const Header = () => {
                         data-aos='fade-down'
                         data-aos-duration='900'
                         > 
-                            Frontend 
+                            Software 
                             <span data-aos='fade-down'
                                     data-aos-duration="900"        
-                                    data-aos-delay='300'> Developer</span>
+                                    data-aos-delay='300'> Engineer</span>
                     </h1>
                     <ReactTyped className="typed-text" 
                                 strings={["Enthusiastic", "Inquisitive", "Creative",]}
