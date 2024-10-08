@@ -1,17 +1,18 @@
 import React from 'react'
 import './Contact.css'
 import { useState } from 'react';
-import emailjs  from 'emailjs-com'
+import emailjs  from '@emailjs/browser'
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
     const [successMessage, setSuccessMessage] = useState()
+    const [errorMessage, setErrorMessage] = useState()
 
     const {register, handleSubmit, formState:{errors}} = useForm()
 
-    const serviceID = "service_j0cb95s";
-    const templateID = "template_gen9t5o";
-    const userID = "user_oeKurg4wa32u1lG9sqliV"
+    const serviceID = "service_3uhx4jw";
+    const templateID = "template_mzop8ib";
+    const userID = "ZNCXO7JmF7qLrUS6E"
 
     const onSubmit = (data, r) => {
         sendEmail(
@@ -21,8 +22,9 @@ const Contact = () => {
                 name: data.name,
                 phone: data.phone,
                 email: data.email,
+                company: data.company,
                 subject: data.subject,
-                message: data.message
+                message: data.message,
             },
             userID
         )
@@ -32,8 +34,12 @@ const Contact = () => {
     const sendEmail = (serviceID, templateID, variables, userID) => {
         emailjs.send(serviceID, templateID, variables, userID)
           .then(() => {
-            setSuccessMessage("Your request has been sent. Thank you for the contact");
-          }).catch(err => console.error(`Something went wrong ${err}`));
+            setSuccessMessage("Your message has been sent. Thank you for the contact.");
+            setErrorMessage("");
+          }).catch(err => {
+            setErrorMessage("Something went wrong. Please try again later.");
+            console.error(`Something went wrong: ${err}`)
+        });
       };
 
     return (
@@ -41,9 +47,16 @@ const Contact = () => {
             <div className="text-center">
                 <h1>Contact Me</h1>
                 <p className="desc">Please fill in the form and let's collab</p>
-                <div className="success-msg">
-                    <span>{successMessage}</span>
-                </div>
+                {successMessage &&
+                    <div className="success-msg">
+                        <span>{successMessage}</span>
+                    </div>
+                }
+                {errorMessage &&
+                    <div className="success-msg">
+                        <span>{errorMessage}</span>
+                    </div>
+                }
             </div>
             <div className="container">
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -69,13 +82,12 @@ const Contact = () => {
                                 {errors.name && errors.name.message}
                             </p>
                             {/* PHONE */}
-                            <label>Phone <span className="required-star">*</span></label>         
+                            <label>Phone</label>
                             <input type="tel"
                                     id="phone"
                                     className="form-control"
                                     name="phone"
                                     {...register("phone",{
-                                        required: "Enter your phone",
                                         pattern: {
                                             value: /[0-9]{4}[0-9]{3}[0-9]{3}/,
                                             message: "Enter a valid phone number format"
@@ -120,8 +132,7 @@ const Contact = () => {
                                     })
                                 }
                                 />
-                            <div className="line"></div>            
-
+                            <div className="line"></div>
                         </div>
                         <div className="col-md-6 col-xs-12">
                              {/* SUBJECT */}
@@ -153,9 +164,8 @@ const Contact = () => {
                             <p className="err-msg">
                                 {errors.message && errors.message.message}
                             </p>
-
                             <button className="btn-main-offer contact-btn"
-                                    type="sumbit"
+                                    type="submit"
                                     >
                                     Contact Me
                             </button>

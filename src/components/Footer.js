@@ -69,7 +69,7 @@ const Footer = () => {
                                 <Link className="footer-nav"
                                     to="contact" smooth={true}
                                     duration={1000} spy={true}
-                                    exact='true' offset={-75}>Contacts</Link>
+                                    exact='true' offset={-75}>Contact</Link>
                             </div>
                         </div>
                     </div>
