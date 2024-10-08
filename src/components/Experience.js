@@ -76,7 +76,7 @@ const Experience = () => {
                         </div>
                         <div className='skill-keywords-info'>
                             <span className='title-skill-keywords-info'>Skills: </span>
-                            Linux, ReactJS, Vite, NodeJS, ExpressJS, Apache Ant, Modular Acrchitecture, EmberJS, FTL, VagrantVM, mySQL
+                            Linux, ReactJS, Vite, NodeJS, ExpressJS, Apache Ant, Modular Acrchitecture, EmberJS, FTL, VagrantVM, mySQL.
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const Experience = () => {
                         </div>
                         <div className='skill-keywords-info'>
                             <span className='title-skill-keywords-info'>Skills: </span>
-                            data collecting, reporting, brainstorming
+                            data collecting, reporting, brainstorming.
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ const Experience = () => {
                         </div>
                         <div className='skill-keywords-info'>
                             <span className='title-skill-keywords-info'>Skills: </span>
-                            UI designing, researching, data analyzing
+                            UI designing, researching, data analyzing.
                         </div>
                     </div>
                 </div>
