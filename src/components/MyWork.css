@@ -5,16 +5,11 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* min-height: 1400px;
-  max-height: 5700px; */
 }
 
 .head-line {
-  /* background-color: red; */
   text-align: center;
   padding: 0 10px 0;
-  /* font-weight: 400; */
-  /* font-size: 32px; */
   text-transform: uppercase;
   color: white;
   letter-spacing: 2px;
@@ -37,19 +32,16 @@
   max-width: 1120px;
   width: 100%;
   margin: 0 auto;
-  /* background-color: purple; */
 }
 
 .cards-wrapper {
   position: relative;
   margin: 50px 10px 45px;
-  /* background-color: pink; */
   transform: translateX(-15px);
 }
 
 .cards-items {
   margin-bottom: 0rem;
-  /* background-color: blue */
   border-radius: 20px;
 }
 
@@ -59,11 +51,8 @@
   flex: 1;
   margin: 3rem 1rem;
   border-radius: 20px;
-  /* background: #0f1626; */
   background: black;
   cursor: pointer;
-  /* background-color: blue; */
-  /* margin-left: -10px; */
 }
 
 .cards-item-link {
@@ -98,7 +87,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(225, 73, 53, 1); */
   font-size: clamp(50px, 12vw, 100px);
   width: 70px;
   height: 70px;

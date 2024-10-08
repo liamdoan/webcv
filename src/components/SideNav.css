@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   width: 100px;
-  /* background-color: red; */
   margin-left: 15px;
   z-index: 100;
 }
@@ -26,7 +25,6 @@
 }
 
 .sidenav-icons {
-  /* background-color: pink; */
   align-items: center;
   justify-content: center;
 }

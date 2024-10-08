@@ -13,7 +13,6 @@
 /* --------QUOTE BACKGROUND -----------  */
 
 .about-quote {
-  /* background-color: red; */
   position: absolute;
   bottom: 65%;
   width: 80vw;
@@ -31,7 +30,6 @@
 }
 
 .about-upper-quote {
-  /* background-color: blue; */
   display: flex;
   justify-content: flex-start;
   font-size: clamp(35px, 8vw, 70px);
@@ -40,7 +38,6 @@
 }
 
 .about-lower-quote {
-  /* background-color: purple; */
   display: flex;
   justify-content: flex-end;
   font-size: clamp(35px, 8vw, 70px);
@@ -83,7 +80,6 @@
 }
 
 .about-text {
-  /* background-color: blue; */
   margin-left: 33px;
   margin-right: 33px;
   text-align: justify;
@@ -143,7 +139,6 @@
   }
 
   .about-text {
-    /* background-color: pink; */
     font-size: 12px;
   }
 }

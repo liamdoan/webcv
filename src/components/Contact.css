@@ -54,8 +54,6 @@ label {
 .contact textarea:focus {
   background-color: transparent;
   color: var(--gray);
-
-  /* border-bottom: none; */
 }
 
 .contact textarea {
