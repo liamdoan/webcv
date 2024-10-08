@@ -155,6 +155,80 @@
   overflow: hidden;
 }
 
+/* ICONS */
+.box-react,
+.box-js,
+.box-html,
+.box-css,
+.box-node,
+.box-express,
+.box-mongo,
+.box-vagrant,
+.box-jira,
+.box-gitlab,
+.box-mui,
+.box-adobe {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 9.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out;
+}
+.box-react {
+  background: #46d0f3;
+  border-bottom: 15px solid #46d0f3;
+}
+.box-js {
+  background: #3178c6;
+  border-bottom: 15px solid #3178c6;
+}
+.box-html {
+  background: rgb(247, 158, 75);
+  border-bottom: 15px solid rgb(247, 158, 75);
+}
+.box-css {
+  background: #66b5fa;
+  border-bottom: 15px solid #66b5fa;
+}
+.box-node {
+  background: #3c873a;
+  border-bottom: 15px solid #68a063;
+}
+.box-express {
+  background: #3c873a;
+  border-bottom: 15px solid #68a063;
+}
+.box-mongo {
+  background: rgb(77, 179, 61);
+  border-bottom: 15px solid rgb(77, 179, 61);
+}
+.box-vagrant {
+  background: #2E71E5;
+  border-bottom: 15px solid #2E71E5;
+}
+.box-jira {
+  background: rgb(1,70,179);
+  border-bottom: 15px solid rgb(1,70,179);
+}
+.box-gitlab {
+  background: #e24329;
+  border-bottom: 15px solid #e24329;
+}
+.box-mui {
+  background: rgb(200, 112, 255);
+  border-bottom: 15px solid rgb(200, 112, 255);
+}
+.box-adobe {
+  background: #d53538;
+  border-bottom: 15px solid #d53538;
+}
+
 .icon-wrap {
   position: relative;
   margin: 20px auto;
@@ -182,45 +256,20 @@
   font-weight: 200;
 }
 
-/* ICONS */
-.box-react {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #46d0f3;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #46d0f3;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
-.icon-react {
-  color: #61dbfb;
+.icon-react,
+.icon-html,
+.icon-css,
+.icon-node,
+.icon-jira,
+.icon-gitlab,
+.icon-mui,
+.icon-adobe {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.box-js {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #3178c6;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #3178c6;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
 .icon-jsts {
   position: absolute;
   top: 50%;
@@ -229,114 +278,14 @@
   width: 70px;
   height: 65px;
 }
-
-.box-html {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: rgb(247, 158, 75);
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid rgb(247, 158, 75);
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
-.icon-html {
-  color: rgb(247, 158, 75);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box-css {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #66b5fa;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #66b5fa;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
-.icon-css {
-  color: #66b5fa;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box-node {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #3c873a;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #68a063;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
-.icon-node {
-  color: #7ebe78;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box-express {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #3c873a;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #68a063;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
 .icon-express {
-  color: #88cf81;
   position: absolute;
   top: 50%;
   left: 80%;
   transform: translate(-50%, -50%);
+  color: #88cf81;
 }
 
-.box-mongo {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: rgb(77, 179, 61);
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid rgb(77, 179, 61);
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
 .icon-mongo {
   position: absolute;
   top: 50%;
@@ -346,21 +295,6 @@
   height: 50px;
 }
 
-.box-vagrant {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #2E71E5;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #2E71E5;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
-}
 .icon-vagrant {
   position: absolute;
   top: 50%;
@@ -370,95 +304,28 @@
   height: 35px;
 }
 
-.box-jira {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: rgb(1,70,179);
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid rgb(1,70,179);
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
+.icon-react {
+  color: #61dbfb;
+}
+.icon-html {
+  color: rgb(247, 158, 75);
+}
+.icon-css {
+  color: #66b5fa
+}
+.icon-node {
+  color: #7ebe78;
 }
 .icon-jira {
   color: rgb(0,82,204);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box-gitlab {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #e24329;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #e24329;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
 }
 .icon-gitlab {
   color: #e24329;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box-mui {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: rgb(200, 112, 255);
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid rgb(200, 112, 255);
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
 }
 .icon-mui {
   color: rgb(200, 112, 255);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.box-adobe {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  background: #d53538;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 9.5rem;
-  margin-bottom: 10px;
-  border-bottom: 15px solid #d53538;
-  display: flex;
-  flex-direction: column;
-  transition: 0.8s ease-in-out;
 }
 .icon-adobe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 30px;
   height: 30px;
 }
