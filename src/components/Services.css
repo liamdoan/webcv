@@ -331,329 +331,17 @@
 }
 
 /* -----------HOVER------------- */
-/* react */
-.box-react::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(to bottom, white, white, #61dbfb 70%, whitesmoke);
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-.box-react:hover::before {
-  transform: translateY(-40%);
-}
-
-.box-react:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 45%;
-  transition: 0.5s ease-in-out;
-  background: black;
-}
-
-/* JavaScript */
-.box-js::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(to bottom, white, white,  #3178c6 70%, whitesmoke);
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-.box-js:hover::before {
-  transform: translateY(-40%);
-}
-
-.box-js:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 50%;
-  transition: 0.5s ease-in-out;
-  background: black;
-}
-
-/* HTML */
-.box-html::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    rgb(247, 158, 75) 70%,
-    whitesmoke
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-.box-html:hover::before {
-  transform: translateY(-40%);
-}
-
-.box-html:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 60%;
-  transition: 0.5s ease-in-out;
-  background: black;
-}
-
-/* CSS */
-.box-css::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    #2b90e7 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-.box-css:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-css:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background: black;
-}
-
-/* NodeJS */
-.box-node::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    #3c873a 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.box-node:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-node:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background-color: black;
-}
-
-/* ExpressJS */
-.box-express::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    #3c873a 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.box-express:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-express:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background: black;
-}
-
-/* MongoDB */
-.box-mongo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    rgb(77, 179, 61) 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.box-mongo:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-mongo:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background: black;
-}
-
-/* Vagrant */
-.box-vagrant::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    #2E71E5 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.box-vagrant:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-vagrant:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background: black;
-}
-
-/* Jira */
-.box-jira::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    rgb(1,70,179) 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.box-jira:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-jira:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background: black;
-}
-
-/* Gitlab */
-.box-gitlab::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    #e24329 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.box-gitlab:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-gitlab:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background: black;
-}
-
-/* Material UI */
-.box-mui::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    rgb(154, 83, 197) 80%,
-    rgb(218, 217, 217)
-  );
-  transition: 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.box-mui:hover::before {
-  transform: translateY(-45%);
-}
-
-.box-mui:hover {
-  border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 40%;
-  transition: 0.5s ease-in-out;
-  color: whitesmoke;
-  background: black;
-}
-
-/* Adobe */
+.box-react::before,
+.box-js::before,
+.box-html::before,
+.box-css::before,
+.box-node::before,
+.box-express::before,
+.box-mongo::before,
+.box-vagrant::before,
+.box-jira::before,
+.box-gitlab::before,
+.box-mui::before,
 .box-adobe::before {
   content: "";
   position: absolute;
@@ -661,30 +349,101 @@
   left: 0;
   width: 100%;
   height: 200%;
-  background: linear-gradient(
-    to bottom,
-    white,
-    white,
-    #d53538 80%,
-    rgb(218, 217, 217)
-  );
   transition: 0.3s ease-in-out;
   z-index: -1;
 }
 
-.box-adobe:hover::before {
-  transform: translateY(-45%);
+.box-react::before {
+  background: linear-gradient(to bottom, white, white, #61dbfb 70%, whitesmoke);
+}
+.box-js::before {
+  background: linear-gradient(to bottom, white, white,  #3178c6 70%, whitesmoke);
+}
+.box-html::before {
+  background: linear-gradient(to bottom,white,white,rgb(247, 158, 75) 70%,whitesmoke);
+}
+.box-css::before {
+  background: linear-gradient(to bottom,white,white,#2b90e7 80%,rgb(218, 217, 217));
+}
+.box-node::before {
+  background: linear-gradient(to bottom, white, white, #3c873a 80%, rgb(218, 217, 217));
+}
+.box-express::before {
+  background: linear-gradient(to bottom, white, white, #3c873a 80%, rgb(218, 217, 217));
+}
+.box-mongo::before {
+  background: linear-gradient(to bottom, white, white, rgb(77, 179, 61) 80%, rgb(218, 217, 217));
+}
+.box-vagrant::before {
+  background: linear-gradient(to bottom, white, white, #2E71E5 80%, rgb(218, 217, 217));
+}
+.box-jira::before {
+  background: linear-gradient(to bottom, white, white, rgb(1,70,179) 80%, rgb(218, 217, 217));
+}
+.box-gitlab::before {
+  background: linear-gradient(to bottom, white, white, #e24329 80%, rgb(218, 217, 217));
+}
+.box-mui::before {
+  background: linear-gradient(to bottom, white, white, rgb(154, 83, 197) 80%, rgb(218, 217, 217));
+}
+.box-adobe::before {
+  background: linear-gradient(to bottom, white, white, #d53538 80%, rgb(218, 217, 217));
 }
 
+.box-react:hover::before,
+.box-js:hover::before,
+.box-html:hover::before,
+.box-css:hover::before,
+.box-node:hover::before,
+.box-express:hover::before,
+.box-mongo:hover::before,
+.box-vagrant:hover::before,
+.box-jira:hover::before,
+.box-gitlab:hover::before,
+.box-mui:hover::before,
+.box-adobe:hover::before {
+  transform: translateY(-40%);
+}
+
+.box-react:hover,
+.box-js:hover,
+.box-html:hover,
+.box-css:hover,
+.box-node:hover,
+.box-express:hover,
+.box-mongo:hover,
+.box-vagrant:hover,
+.box-jira:hover,
+.box-gitlab:hover,
+.box-mui:hover,
 .box-adobe:hover {
   border-bottom: 3px solid var(--dark);
-  border-bottom-right-radius: 50%;
-  transition: 0.3s ease-in-out;
-  color: whitesmoke;
+  border-bottom-right-radius: 40%;
+  transition: 0.5s ease-in-out;
   background: black;
 }
 
-.box-css:hover .icon-wrap {
+.box-css:hover,
+.box-node:hover,
+.box-express:hover,
+.box-mongo:hover,
+.box-vagrant:hover,
+.box-jira:hover,
+.box-gitlab:hover,
+.box-mui:hover,
+.box-adobe:hover {
+  color: whitesmoke;
+}
+
+.box-css:hover .icon-wrap,
+.box-node:hover .icon-wrap,
+.box-express:hover .icon-wrap-express,
+.box-mongo:hover .icon-wrap,
+.box-vagrant:hover .icon-wrap,
+.box-jira:hover .icon-wrap,
+.box-gitlab:hover .icon-wrap,
+.box-mui:hover .icon-wrap,
+.box-adobe:hover .icon-wrap {
   background: whitesmoke;
   transition: 0.3s ease-in-out;
 }
@@ -694,51 +453,12 @@
   transition: 0.3s ease-in-out;
 }
 
-.box-node:hover .icon-wrap {
-  background: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
-
-.box-express:hover .icon-wrap-express {
-  background: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
 .box-express:hover .icon-express {
   color: #3c873a;
   transition: 0.3s ease-in-out;
 }
 .box-express:hover .express-span {
   color: black;
-  transition: 0.3s ease-in-out;
-}
-
-.box-mongo:hover .icon-wrap {
-  background: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
-
-.box-vagrant:hover .icon-wrap {
-  background: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
-
-.box-jira:hover .icon-wrap {
-  background: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
-
-.box-gitlab:hover .icon-wrap {
-  background: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
-
-.box-mui:hover .icon-wrap {
-  background: whitesmoke;
-  transition: 0.3s ease-in-out;
-}
-
-.box-adobe:hover .icon-wrap {
-  background: whitesmoke;
   transition: 0.3s ease-in-out;
 }
 

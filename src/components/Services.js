@@ -44,7 +44,7 @@ const Services = () => {
                     <div className="row services-row"
                         style={{transform: `translateY(-${offsetY * 0.03}px)`}}
                         >
-                        <div className="col-lg-2 col-md-4 col-sm-6"
+                        <div className="col-lg-2 col-md-4 col-sm-4"
                                 data-aos='flip-left'
                                 data-aos-duration="700"
                                 data-aos-once="true"
