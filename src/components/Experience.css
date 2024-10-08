@@ -53,13 +53,19 @@
 }
 
 .marker {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 3px;
+  z-index: 5;
+}
+.marker-dream-broker,
+.marker-witview,
+.marker-hamk {
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 50%;
-  border: 3px solid white;
-  background: #ad974f;
-  margin-top: 10px;
-  z-index: 10;
+  object-fit: cover;
+  border: 2px solid white;
 }
 
 .timeline-content {

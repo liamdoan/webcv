@@ -1,5 +1,8 @@
 import React from 'react'
 import './Experience.css'
+import DBLogo from '../img/logo/logo-dream-broker.jpg'
+import WitviewLogo from '../img/logo/logo-witviewio.jpeg'
+import HamkLogo from '../img/logo/logo-hamk.jpg'
 
 // future develop with data mappings
 const Experience = () => {
@@ -12,6 +15,7 @@ const Experience = () => {
             {/* WORK 3 */}
             <div className="timeline-block timeline-block-left">
                     <div className="marker">
+                        <img src={DBLogo} alt="dream-broker" className='marker-dream-broker'/>
                     </div>
                     <div className="timeline-content" 
                             data-aos='fade-left' 
@@ -27,47 +31,47 @@ const Experience = () => {
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Oversee frontend development across multiple platforms for company’s legacy product.
+                                Oversee Frontend development across legacy/modern platforms for company’s legacy OVP product.
                             </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Implement new, scalable, maintainable features and UI/UX from designers for 
-                                TypeScript-based React projects, which directly contributes to increased product sales.
+                                Utilize TypeScript-based React stack to engineer new, scalable, maintainable solutions
+                                and UI/UX from designers, directly contributing to increased product sales.
                             </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Refactor, maintain existing ReactJS codebases to improve performance, accessibility and 
-                                scalability, aiming to better readability, simplify future enhancement and facilitate easier 
-                                maintenance.
+                                Engineer, build React library with Vite for high-efficiency.
                             </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Integrate React project as an NPM package into existing applications.
-                            </li>
-                        </div> 
-                        <div className="list-info">
-                            <li className="dot">
-                            </li>
-                            <li className="li-info">
-                                Develop new independent React project from NPM package to be used across products 
-                                and customers’ platforms, deeply focusing on project’s modular design and reusability.
+                                Refactor, maintain ReactJS codebases, achieved significant improvement in
+                                performance, accessibility (WCAG), scalability, aimed to better readability, simplify
+                                future enhancement and facilitate easier maintenance.
                             </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Maintain, add features, fix existing bugs for legacy Online Video Platform with EmberJS 
-                                and FreeMarker Template FTL for frontend and backend.
+                                Develop React library from company's own NPM package to be used across products and 
+                                customers’ platforms, focusing on Modular Architecture, Reusability.
+                            </li>
+                        </div>
+                        <div className="list-info">
+                            <li className="dot">
+                            </li>
+                            <li className="li-info">
+                                Maintain, add features, debug existing bugs for legacy Online Video Platform (OVP) with
+                                EmberJS, FTL (FreeMarker Template), Apache Ant for frontend and backend.
                             </li>
                         </div>
                     </div>
@@ -75,6 +79,7 @@ const Experience = () => {
                {/* WORK 2 */}
                 <div className="timeline-block timeline-block-right">
                     <div className="marker">
+                        <img src={WitviewLogo} alt="witviewio" className='marker-witview'/>
                     </div>
                     <div className="timeline-content" 
                             data-aos='fade-left' 
@@ -114,7 +119,8 @@ const Experience = () => {
                 </div>
                 {/* WORK 1 */}
                 <div className="timeline-block timeline-block-left">
-                    <div className="marker">  
+                    <div className="marker">
+                        <img src={HamkLogo} alt="hamk" className='marker-hamk'/>
                     </div>
                     <div className="timeline-content"
                             data-aos='fade-right'
@@ -143,42 +149,6 @@ const Experience = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className="timeline-block timeline-block-right">
-                    <div className="marker">
-
-                    </div>
-                    <div className="timeline-content">
-                        <h3>2016-2017</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti placeat ipsa! Itaque laborum assumenda voluptatem incidunt, optio aperiam eaque soluta atque provident consectetur placeat exercitationem nihil veritatis tempore similique sed commodi saepe accusamus. Vel nam numquam laudantium est soluta.</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-left">
-                    <div className="marker">
-
-                    </div>
-                    <div className="timeline-content">
-                        <h3>2017-2018</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti placeat ipsa! Itaque laborum assumenda voluptatem incidunt, optio aperiam eaque soluta atque provident consectetur placeat exercitationem nihil veritatis tempore similique sed commodi saepe accusamus. Vel nam numquam laudantium est soluta.</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-right">
-                    <div className="marker">
-
-                    </div>
-                    <div className="timeline-content">
-                        <h3>2018-2019</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti placeat ipsa! Itaque laborum assumenda voluptatem incidunt, optio aperiam eaque soluta atque provident consectetur placeat exercitationem nihil veritatis tempore similique sed commodi saepe accusamus. Vel nam numquam laudantium est soluta.</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-left">
-                    <div className="marker">
-
-                    </div>
-                    <div className="timeline-content">
-                        <h3>2019-2020</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti placeat ipsa! Itaque laborum assumenda voluptatem incidunt, optio aperiam eaque soluta atque provident consectetur placeat exercitationem nihil veritatis tempore similique sed commodi saepe accusamus. Vel nam numquam laudantium est soluta.</p>
-                    </div>
-                </div> */}
             </div>    
         </div>
     )

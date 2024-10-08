@@ -13,7 +13,6 @@ function MyWorkCardItem(props) {
   
     return (
         <>
-            
             <div className="cards-item"
                 data-aos='zoom-in'
                 data-aos-duration="1000"
