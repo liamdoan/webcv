@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 
 
-function CardItem(props) { 
+function MyWorkCardItem(props) { 
 
     useEffect(() => {
         Aos.init({})
@@ -44,4 +44,4 @@ function CardItem(props) {
     )
 }
 
-export default CardItem
+export default MyWorkCardItem

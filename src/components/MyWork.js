@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import CardItem from './CardItem'
+import MyWorkCardItem from './MyWorkCardItem'
 import './MyWork.css'
 import project6 from '../img/thumbnail-6.jpg'
 import project5 from '../img/thumbnail-5.jpg'
@@ -238,7 +238,7 @@ function MyWork() {
                     <ul className="cards-items"
                         // style={{transform: `translateY(${offsetY * 0.05}px)`}}
                     >
-                            <CardItem 
+                            <MyWorkCardItem 
                                 onClick={openPopup7}
                                 src={project7}
                                 text="ZAROSEN Fashion Store Website"
@@ -246,7 +246,7 @@ function MyWork() {
                                 path="/services"
                                 number="7"
                                 /> 
-                            <CardItem 
+                            <MyWorkCardItem 
                                 onClick={openPopup6}
                                 src={project6}
                                 text="ABC GreenTech Consultancy Website"
@@ -254,7 +254,7 @@ function MyWork() {
                                 path="/services"
                                 number="6"
                                 /> 
-                            <CardItem
+                            <MyWorkCardItem
                                 onClick={openPopup5}
                                 src={project5}
                                 text="ABC Highend Restaurant Website"
@@ -266,7 +266,7 @@ function MyWork() {
                     <ul className="cards-items"
                         // style={{transform: `translateY(${offsetY * 0.05}px)`}}
                                 >
-                            <CardItem
+                            <MyWorkCardItem
                                 onClick={openPopup4}
                                 src={project4}
                                 text="ABC Photography Service Website"
@@ -274,7 +274,7 @@ function MyWork() {
                                 path="/services"
                                 number="4"
                                 />
-                            <CardItem 
+                            <MyWorkCardItem 
                                 onClick={openPopup3}
                                 src={project3}
                                 text="To-do Web App"
@@ -282,7 +282,7 @@ function MyWork() {
                                 path="/services"
                                 number="3"
                                 /> 
-                            <CardItem
+                            <MyWorkCardItem
                                 onClick={openPopup2}
                                 src={project2}
                                 text="Food Recipes App"
@@ -290,7 +290,7 @@ function MyWork() {
                                 path="/services"
                                 number="2"
                                 />
-                            <CardItem
+                            <MyWorkCardItem
                                 onClick={openPopup1}
                                 src={project1}
                                 text="Weather App"
