@@ -144,12 +144,11 @@
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
   z-index: 2;
   background-color: white;
+  padding: 5px;
 }
 
 .box-wrap {
   background-color: black;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   height: 9.5rem;
   margin-bottom: 10px;
   margin-top: 10px;
