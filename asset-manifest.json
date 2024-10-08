@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/webcv/static/css/main.7499299f.chunk.css",
+    "main.css": "/webcv/static/css/main.7c7fcf36.chunk.css",
     "main.js": "/webcv/static/js/main.0c35cf7b.chunk.js",
     "main.js.map": "/webcv/static/js/main.0c35cf7b.chunk.js.map",
     "runtime-main.js": "/webcv/static/js/runtime-main.7015e5c3.js",
@@ -10,7 +10,7 @@
     "static/js/2.df0018fe.chunk.js.map": "/webcv/static/js/2.df0018fe.chunk.js.map",
     "index.html": "/webcv/index.html",
     "static/css/2.2d05c66d.chunk.css.map": "/webcv/static/css/2.2d05c66d.chunk.css.map",
-    "static/css/main.7499299f.chunk.css.map": "/webcv/static/css/main.7499299f.chunk.css.map",
+    "static/css/main.7c7fcf36.chunk.css.map": "/webcv/static/css/main.7c7fcf36.chunk.css.map",
     "static/js/2.df0018fe.chunk.js.LICENSE.txt": "/webcv/static/js/2.df0018fe.chunk.js.LICENSE.txt",
     "static/media/adobe-logo-1.b0554edf.svg": "/webcv/static/media/adobe-logo-1.b0554edf.svg",
     "static/media/Experience.css": "/webcv/static/media/background-1.120377db.jpg",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.7015e5c3.js",
     "static/css/2.2d05c66d.chunk.css",
     "static/js/2.df0018fe.chunk.js",
-    "static/css/main.7499299f.chunk.css",
+    "static/css/main.7c7fcf36.chunk.css",
     "static/js/main.0c35cf7b.chunk.js"
   ]
 }
