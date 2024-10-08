@@ -74,6 +74,10 @@ const Experience = () => {
                                 EmberJS, FTL (FreeMarker Template), Apache Ant for frontend and backend.
                             </li>
                         </div>
+                        <div className='skill-keywords-info'>
+                            <span className='title-skill-keywords-info'>Skills: </span>
+                            Linux, ReactJS, Vite, NodeJS, ExpressJS, Apache Ant, Modular Acrchitecture, EmberJS, FTL, VagrantVM, mySQL
+                        </div>
                     </div>
                 </div>
                {/* WORK 2 */}
@@ -114,7 +118,11 @@ const Experience = () => {
                             <li className="dot">
                             </li>
                             <li className="li-info">creating instruction material and guiding new trainees</li>
-                        </div> 
+                        </div>
+                        <div className='skill-keywords-info'>
+                            <span className='title-skill-keywords-info'>Skills: </span>
+                            data collecting, reporting, brainstorming
+                        </div>
                     </div>
                 </div>
                 {/* WORK 1 */}
@@ -146,6 +154,10 @@ const Experience = () => {
                             <li className="dot">
                             </li>
                             <li className="li-info">researching the ability to integrate solar power with other renewable energy sources</li>
+                        </div>
+                        <div className='skill-keywords-info'>
+                            <span className='title-skill-keywords-info'>Skills: </span>
+                            UI designing, researching, data analyzing
                         </div>
                     </div>
                 </div>

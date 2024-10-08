@@ -121,6 +121,16 @@
   font-style: italic;
 }
 
+.skill-keywords-info {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.title-skill-keywords-info {
+  font-weight: 300;
+}
+
 @media screen and (max-width: 768px) {
   .experience-wrap {
     padding-left: 0;
