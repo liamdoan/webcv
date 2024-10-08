@@ -1,7 +1,7 @@
 import React from 'react'
 import './SideNav.css'
-import GithubLogo from "../img/github-icon.png"
-import LinkedinLogo from "../img/linkedin-icon.png"
+import GithubLogo from "../img/logo/github-icon.png"
+import LinkedinLogo from "../img/logo/linkedin-icon.png"
 
 
 const SideNav = () => {

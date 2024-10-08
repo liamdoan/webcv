@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react'
 import './Services.css'
 import { faCss3Alt, faHtml5, faNode, faNodeJs, faJira, faGitlab, faReact, faUikit } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import AdobeLogo from '../img/adobe-logo-1.svg'
-import JSTSLogo from '../img/logo-jsts.png'
-import MongoLogo from '../img/logo-mongo.svg'
-import VagrantLogo from '../img/logo-vagrant.png'
+import AdobeLogo from '../img/logo/adobe-logo-1.svg'
+import JSTSLogo from '../img/logo/logo-jsts.png'
+import MongoLogo from '../img/logo/logo-mongo.svg'
+import VagrantLogo from '../img/logo/logo-vagrant.png'
  
 const Services = () => {
 

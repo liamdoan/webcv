@@ -1,7 +1,7 @@
 .cards {
   padding: 3rem 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url(../img/background1-1.jpg) no-repeat;
+    url(../img/background/background1-1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

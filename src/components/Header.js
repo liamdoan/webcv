@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ReactTyped from 'react-typed'
 import './Header.css'
 import { Link } from 'react-scroll'
-import headLogo from "../img/heading-logo2.svg"
+import headLogo from "../img/logo/heading-logo2.svg"
 
 
 const Header = () => {  

@@ -11,8 +11,8 @@ import {
 } from 'react-share'
 import { Link } from 'react-scroll'
 import { animateScroll as scroll } from 'react-scroll'
-import GithubLogo from "../img/github-icon.png"
-import LinkedinLogo from "../img/linkedin-icon.png"
+import GithubLogo from "../img/logo/github-icon.png"
+import LinkedinLogo from "../img/logo/linkedin-icon.png"
 
  
 const Footer = () => {
