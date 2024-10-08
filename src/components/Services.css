@@ -153,6 +153,7 @@
 .services-row {
   position: relative;
   /* background-color: red; */
+  border-radius: 20px;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
   z-index: 2;
   background-color: white;
@@ -161,10 +162,13 @@
 .box-wrap {
   /* background: var(--light-brown); */
   /* border: 2px solid black; */
-  background: black;
+  background-color: black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   height: 9.5rem;
   margin-bottom: 10px;
   margin-top: 10px;
+  overflow: hidden;
 }
 
 .icon-wrap {
@@ -616,7 +620,7 @@
   border-bottom-right-radius: 40%;
   transition: 0.5s ease-in-out;
   color: whitesmoke;
-  background: black;
+  background-color: black;
 }
 
 /* ExpressJS */
