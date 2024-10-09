@@ -1,0 +1,41 @@
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-input {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toggle-label {
+    margin: 0;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.toggle-label .toggle-ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+/* Change background color and ball position on toggle */
+.toggle-input:checked + .toggle-label {
+    background-color: #4caf50;
+}
+
+.toggle-input:checked + .toggle-label .toggle-ball {
+    transform: translateX(30px);
+}

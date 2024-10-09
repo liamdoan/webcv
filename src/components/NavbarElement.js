@@ -23,13 +23,12 @@ transition: 0.5s ease-in-out;
 `
 
 export const NavbarContainer = styled.div`
-/* background-color: pink; */
 display: flex;
 justify-content: space-between;
 height: 80px;
 z-index: 1;
 width: 100%;
-padding: 0 24px;
+padding: 0;
 max-width: 1100px;
 /* background-color: blue; */
 `
@@ -116,6 +115,7 @@ letter-spacing: 0.1px;
 export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
+/* background-color: red; */
 
 @media screen and (max-width: 768px){
     display: none;
@@ -138,12 +138,12 @@ text-decoration: none;
 text-transform: uppercase;
 font-weight: 400;
 letter-spacing: 0.2px;
+margin-right: 1.5rem;
 
 &:hover{
 transition: all 0.5s ease-in-out;
 background: #ad974f;
 color: white;
 border: 1px solid #ad974f;
-
 }
 `

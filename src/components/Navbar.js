@@ -5,6 +5,7 @@ import {
 } from './NavbarElement'
 import { FaBars } from 'react-icons/fa'
 import { animateScroll as scroll} from 'react-scroll'
+import ThemeToggleBtn from './ThemeToggleBtn'
 import { useLocation } from 'react-router'
 
 const Navbar = ({toggle}) => { 
@@ -113,6 +114,7 @@ const Navbar = ({toggle}) => {
                                     scrollNav={scrollNav}>
                                         Contact
                         </NavBtnLink>
+                        <ThemeToggleBtn />
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
