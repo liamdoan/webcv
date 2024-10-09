@@ -1,12 +1,17 @@
-/* Header Section */
-
 .header-wrap {
-  background-color: white;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   /* z-index: -1; */
+}
+.header-wrap.light {
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.header-wrap.dark {
+  background-color: var(--dark-theme-black-light);
+  transition: 0.3s ease-in-out;
 }
 
 .big-title {

@@ -3,9 +3,10 @@ import ReactTyped from 'react-typed'
 import './Header.css'
 import { Link } from 'react-scroll'
 import headLogo from "../img/logo/heading-logo2.svg"
-
+import { useTheme } from '../context/ThemeContext'
 
 const Header = () => {  
+    const {theme} = useTheme();
 
     const [offsetY, setOffsetY] = useState()
     const handleScroll = () => setOffsetY(window.pageYOffset)
@@ -17,7 +18,7 @@ const Header = () => {
 
  
     return ( 
-        <div id="home" className="header-wrap"
+        <div id="home" className={`header-wrap ${theme}`}
         > 
             <h1 className="big-title">developer</h1>
             <div className="header-content"

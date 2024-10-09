@@ -10,6 +10,10 @@
   --light-brown: #e7d8cc;
   --dark-brown: #b1a296;
   --light-blue: #7395ae;
+
+  --dark-theme-black: #131313;
+  --dark-theme-black-light: #2B2B2B;
+  --dark-theme-gray: #86868B;
 }
 
 * {
