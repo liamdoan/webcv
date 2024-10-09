@@ -17,7 +17,7 @@ import { useLocation } from 'react-router';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import SideNav from './components/SideNav';
-
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -39,7 +39,7 @@ function App() {
   }, [location.pathname])
 
   return (
-    <>
+    <ThemeProvider>
       <Particles
         params={{
           particles: {
@@ -77,7 +77,7 @@ function App() {
       <About/>
       <Contact/>
       <Footer/>
-    </>
+    </ThemeProvider>
   );
 }
 
