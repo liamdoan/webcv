@@ -115,6 +115,7 @@ letter-spacing: 0.1px;
 export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
+margin-right: 24px;
 /* background-color: red; */
 
 @media screen and (max-width: 768px){
