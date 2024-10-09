@@ -34,7 +34,7 @@ max-width: 1100px;
 `
 
 export const NavLogo = styled.div`
-color: ${({scrollNav}) => (scrollNav ? 'white' : '#231f20') };
+color: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? 'white' : '#231f20') : 'white')};
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5rem;
@@ -85,7 +85,7 @@ height: 80px;
 
 export const NavLinks = styled(LinkScroll)`
 /* background-color: blue; */
-color: ${({scrollNav}) => (scrollNav ? 'white' : '#231f20') };
+color: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? 'white' : '#231f20') : 'white')};
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -100,13 +100,13 @@ letter-spacing: 0.1px;
 
 &:hover {
     /* color: var(--dark-orange) */
-    color: #ad974f;
+    color: var(--golden);
 }
 
 &.active{
     /* border-bottom: 7px solid var(--dark-orange); */
     /* color: var(--dark-orange); */
-    border-bottom: 7px solid #ad974f;
+    border-bottom: 7px solid var(--golden);
     font-weight: 600;
     transition: 0.3s ease-in-out;
 }
@@ -128,11 +128,10 @@ export const NavBtnLink = styled(LinkScroll)`
 background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent') };
 white-space: nowrap;
 padding: 10px 22px;
-/* color: #010606; */
-color: ${({scrollNav}) => (scrollNav ? 'white' : 'black') };
+color: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? 'white' : '#231f20') : 'white')};
 font-size: 15px;
 outline: none;
-border: ${({scrollNav}) => (scrollNav ? '1px solid white' : '1px solid black') };
+border: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? '1px solid white' : '1px solid black') : '1px solid white')};
 cursor: pointer;
 transition: all 0.5s ease-in-out;
 text-decoration: none;
@@ -142,9 +141,9 @@ letter-spacing: 0.2px;
 margin-right: 1.5rem;
 
 &:hover{
-transition: all 0.5s ease-in-out;
-background: #ad974f;
+transition: all 0.3s ease-in-out;
+background: var(--golden);
 color: white;
-border: 1px solid #ad974f;
+border: 1px solid var(--golden);
 }
 `

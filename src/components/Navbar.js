@@ -6,11 +6,11 @@ import {
 import { FaBars } from 'react-icons/fa'
 import { animateScroll as scroll} from 'react-scroll'
 import ThemeToggleBtn from './ThemeToggleBtn'
-import { useLocation } from 'react-router'
+import { useTheme } from '../context/ThemeContext'
 
 const Navbar = ({toggle}) => { 
-
-    const[scrollNav, setScrollNav] = useState(false)
+    const[scrollNav, setScrollNav] = useState(false);
+    const {theme} = useTheme();
 
     const changeNav = () => {
         if(window.scrollY >= 80){
@@ -67,7 +67,7 @@ const Navbar = ({toggle}) => {
             {/* <Nav style={style}> */}
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={scrollHome} scrollNav={scrollNav}>
+                    <NavLogo to="/" onClick={scrollHome} scrollNav={scrollNav} theme={theme}>
                         Lam Doan
                     </NavLogo>
                     <MobileIcon onClick={toggle} scrollNav={scrollNav}>
@@ -78,7 +78,8 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="portfolio" smooth={true}
                                     duration={1000} spy={true}
                                     exact='true' offset={-75}
-                                    scrollNav={scrollNav}>
+                                    scrollNav={scrollNav}
+                                    theme={theme}>
                                 My Works
                             </NavLinks>
                         </NavItem>
@@ -86,7 +87,8 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="services" smooth={true}
                                     duration={1000} spy={true}
                                     exact='true' offset={-70}
-                                    scrollNav={scrollNav}>
+                                    scrollNav={scrollNav}
+                                    theme={theme}>
                                 Tools
                             </NavLinks>
                         </NavItem>
@@ -94,7 +96,8 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="experience" smooth={true}
                                     duration={1000} spy={true}
                                     exact='true' offset={-60}
-                                    scrollNav={scrollNav}>
+                                    scrollNav={scrollNav}
+                                    theme={theme}>
                                 Experiences
                             </NavLinks>
                         </NavItem>
@@ -102,7 +105,8 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="about" smooth={true}
                                     duration={1000} spy={true}
                                     exact='true' offset={-55}
-                                    scrollNav={scrollNav}>
+                                    scrollNav={scrollNav}
+                                    theme={theme}>
                                 About
                             </NavLinks>
                         </NavItem>
@@ -111,7 +115,8 @@ const Navbar = ({toggle}) => {
                         <NavBtnLink to="contact" smooth={true}
                                     duration={1000} spy={true}
                                     exact='true' offset={-50}
-                                    scrollNav={scrollNav}>
+                                    scrollNav={scrollNav}
+                                    theme={theme}>
                                         Contact
                         </NavBtnLink>
                         <ThemeToggleBtn />
