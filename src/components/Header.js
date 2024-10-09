@@ -16,24 +16,24 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
- 
     return ( 
         <div id="home" className={`header-wrap ${theme}`}
         > 
-            <h1 className="big-title">developer</h1>
+            <h1 className={`big-title ${theme}`}>developer</h1>
             <div className="header-content"
                 > 
                 <div className="main-info">
-                    <h1 className="main-title"
-                        data-aos='fade-down'
-                        data-aos-duration='900'
-                        > 
-                            Lam
-                            <span data-aos='fade-down'
-                                    data-aos-duration="900"        
-                                    data-aos-delay='300'> Doan</span>
-                    </h1>
-                    <ReactTyped className="typed-text" 
+                    <div className={`main-title ${theme}`}>
+                        <h1 data-aos='fade-down'
+                            data-aos-duration='900'
+                            >
+                                Lam
+                                <span data-aos='fade-down'
+                                        data-aos-duration="900"
+                                        data-aos-delay='300'> Doan</span>
+                        </h1>
+                    </div>
+                    <ReactTyped className={`typed-text ${theme}`}
                                 strings={["Enthusiastic", "Inquisitive", "Creative",]}
                                 typeSpeed={30}
                                 backSpeed={40}
@@ -41,24 +41,26 @@ const Header = () => {
                                 data-aos='fade-down'
                                 data-aos-duration='900'
                                 /> 
-                    <Link 
-                        className="header-btn"
-                        to="portfolio" 
-                        smooth={true}
-                        duration={1000} 
-                        spy={true}
-                        exact='true' 
-                        offset={-75}
-                        data-aos='fade-down'
-                        data-aos-duration='900'
-                        data-aos-delay="500"
+                    <button className={`header-btn ${theme}`}>
+                        <Link
+                            className='header-btn-link'
+                            to="portfolio"
+                            smooth={true}
+                            duration={1000}
+                            spy={true}
+                            exact='true'
+                            offset={-75}
+                            data-aos='fade-down'
+                            data-aos-duration='900'
+                            data-aos-delay="500"
                         >
-                            Check out my work
+                            <span className={`header-btn-link-title ${theme}`}>Check out my work</span>
                         </Link>
+                    </button>
                 </div>
                 <div className="img-wrap"
                     data-aos='fade-up'
-                    data-aos-duration="900"        
+                    data-aos-duration="900"
                     data-aos-delay='500'
                     >             
                     <img className="head-logo" src={headLogo} alt="logo" 
