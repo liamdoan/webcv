@@ -31,15 +31,15 @@ const Experience = () => {
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Oversee Frontend development across legacy/modern platforms for company’s legacy OVP product.
+                                Oversee Frontend development across 4 legacy/modern platforms for legacy OVP product.
                             </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Utilize TypeScript-based React stack to engineer new, scalable, maintainable solutions
-                                and UI/UX from designers, directly contributing to increased product sales.
+                                Directly contributing to 6% in product sales with engineering new, scalable,
+                                maintainable TypeScript-based React solutions and UI/UX from designers.
                             </li>
                         </div>
                         <div className="list-info">
@@ -53,25 +53,25 @@ const Experience = () => {
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Refactor, maintain ReactJS codebases, achieved significant improvement in
-                                performance, accessibility (WCAG), scalability, aimed to better readability, simplify
-                                future enhancement and facilitate easier maintenance.
+                                Develop independent React library from NPM package to be used across 2 products and
+                                1 customers’ platform, deeply focusing on Modular Architecture, Reusability.
                             </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Develop React library from company's own NPM package to be used across products and 
-                                customers’ platforms, focusing on Modular Architecture, Reusability.
+                                Refactor, maintain ReactJS codebases, achieved 8-12% improvement in performance,
+                                accessibility (WCAG), scalability, aimed to better readability, simplify future
+                                enhancement and facilitate easier maintenance.
                             </li>
                         </div>
                         <div className="list-info">
                             <li className="dot">
                             </li>
                             <li className="li-info">
-                                Maintain, add features, debug existing bugs for legacy Online Video Platform (OVP) with
-                                EmberJS, FTL (FreeMarker Template), Apache Ant for frontend and backend.
+                                Maintain, implement 5 main features, debug 15+ bugs for legacy/modern Online Video
+                                Platform (OVP) with EmberJS, FTL, ReactJS, Apache Ant for frontend, backend.
                             </li>
                         </div>
                         <div className='skill-keywords-info'>
