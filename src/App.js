@@ -17,10 +17,11 @@ import { useLocation } from 'react-router';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import SideNav from './components/SideNav';
-import { ThemeProvider } from './context/ThemeContext';
+import { useTheme } from './context/ThemeContext';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const { theme } = useTheme();
 
     const toggle = () => {
         setIsOpen(!isOpen)
@@ -39,7 +40,7 @@ function App() {
   }, [location.pathname])
 
   return (
-    <ThemeProvider>
+    <>
       <Particles
         params={{
           particles: {
@@ -53,13 +54,12 @@ function App() {
             shape: {
               type: "circle",
               stroke: {
-                width: 7, 
-                // color: "#f9ab00",
-                color: "#000",
+                width: 7,
+                color: theme === 'dark' ? '#fff' : '#000',
               }
             },
             line_linked:{
-              color: "#000",
+              color: theme === 'dark' ? '#fff' : '#000',
               opacity: 0.5
             }
           }
@@ -77,7 +77,7 @@ function App() {
       <About/>
       <Contact/>
       <Footer/>
-    </ThemeProvider>
+    </>
   );
 }
 
