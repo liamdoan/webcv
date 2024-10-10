@@ -101,14 +101,18 @@ transition: 0.3s ease-in-out;
 
 export const SideBtnWrap = styled.div`
 display: flex;
+flex-direction: column;
 justify-content: center;
+align-items: center;
 `
 
 export const SidebarRoute = styled(LinkScroll)`
+text-decoration: none;
 border-radius: 0px;
 background: transparent;
 white-space: nowrap;
 padding: 16px 64px;
+margin-bottom: 4rem;
 color: white;
 font-size: 20px;
 font-weight: 350;
@@ -117,7 +121,6 @@ outline: none;
 border: 1px solid white;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
-text-decoration: none;
 
 &:hover{
 transition: all 0.2s ease-in-out;

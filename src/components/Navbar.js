@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { 
     Nav, NavbarContainer, NavLogo, MobileIcon, 
-    NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink
+    NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink,
+    StyledFaBars
 } from './NavbarElement'
-import { FaBars } from 'react-icons/fa'
 import { animateScroll as scroll} from 'react-scroll'
 import ThemeToggleBtn from './ThemeToggleBtn'
 import { useTheme } from '../context/ThemeContext'
@@ -71,7 +71,7 @@ const Navbar = ({toggle}) => {
                         Lam Doan
                     </NavLogo>
                     <MobileIcon onClick={toggle} scrollNav={scrollNav}>
-                        <FaBars/>
+                        <StyledFaBars theme={theme} />
                     </MobileIcon >
                     <NavMenu>
                     <NavItem>

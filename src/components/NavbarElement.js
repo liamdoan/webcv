@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
+import { FaBars } from 'react-icons/fa'
 
 export const Nav = styled.nav`
 background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent') };
@@ -60,6 +61,10 @@ display: none;
     color: ${({scrollNav}) => (scrollNav ? 'white' : '#231f20') };
     
 }
+`
+
+export const StyledFaBars = styled(FaBars)`
+    color: ${({theme}) => theme === 'light' ? 'black' : 'white'};
 `
 
 export const NavMenu = styled.ul`

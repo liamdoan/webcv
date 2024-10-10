@@ -4,6 +4,7 @@ import {
     SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute,
     SocialIcons, GithubLink, LinkedinLink, Img}
     from './SidebarElement'
+import ThemeToggleBtn from './ThemeToggleBtn'
 import GithubLogo from "../img/logo/github-icon.png"
 import LinkedinLogo from "../img/logo/linkedin-icon.png"
 
@@ -53,6 +54,7 @@ import LinkedinLogo from "../img/logo/linkedin-icon.png"
                                     duration={1000} spy={true}
                                     exact='true' offset={-70}
                                     onClick={toggle}>Contact</SidebarRoute>
+                        <ThemeToggleBtn />
                     </SideBtnWrap>
                 </SidebarWrapper>
             </SidebarContainer>
