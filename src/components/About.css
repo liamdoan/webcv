@@ -70,7 +70,7 @@
 }
 .about-wrap.dark {
   background-color: var(--dark-theme-black);
-  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 3px 3px 25px rgba(0, 0, 0, 1);
 }
 
 .picwrap {

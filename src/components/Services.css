@@ -20,7 +20,7 @@
   padding: 0;
   color: black;
   text-transform: uppercase;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   z-index: 2;
 }
 .services-title.light {
@@ -37,6 +37,7 @@
   font-size: 15px;
   font-style: italic;
   letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
   z-index: 2;
 }
 .sub-services-title.light {
@@ -54,7 +55,7 @@
   font-size: clamp(57px, 21vw, 280px);
   overflow: hidden;
   white-space: nowrap;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   z-index: 1;
 }
 .services-big-title.light {
@@ -173,20 +174,19 @@
 .services-row {
   position: relative;
   border-radius: 20px;
+  padding: 5px;
   z-index: 2;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .services-row.light {
-  padding: 5px;
   background-color: white;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
 }
 .services-row.dark {
-  padding: 10px;
   background-color: var(--dark-theme-black);
   box-shadow: 
     7px 7px 25px black, 
-    inset 0px 0px 10px rgba(109, 123, 133, 0.7);
+    inset 0px 0px 10px rgba(109, 123, 133, 0.4);
 }
 
 .box-wrap {
@@ -196,12 +196,17 @@
   margin-top: 10px;
   overflow: hidden;
   border-radius: 15px;
+  transition: 0.3s ease-in-out;
 }
 .box-wrap.light {
   background-color: white;
 }
 .box-wrap.dark {
   background-color: var(--dark-theme-black);
+  box-shadow: 7px 7px 10px rgb(0, 0, 0, 0.5);
+}
+.box-wrap:hover {
+  border-bottom-right-radius: 40%;
 }
 
 /* ICONS */
@@ -256,6 +261,7 @@
 .box-mui.dark,
 .box-adobe.dark {
   background: var(--dark-theme-black);
+  color: var(--dark-theme-font-color);
 }
 .box-react {
   /* background: #46d0f3; */
@@ -426,107 +432,82 @@
   left: 0;
   width: 100%;
   height: 200%;
-  opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   z-index: -1;
 }
 
 .box-react.light::before {
   background: linear-gradient(to bottom, white, white, #61dbfb 80%, whitesmoke);
-  opacity: 1;
 }
 .box-js.light::before {
-  background: linear-gradient(to bottom, white, white,  #3178c6 80%, whitesmoke);
-  opacity: 1;
+  background: linear-gradient(to bottom, white, white, #3178c6 80%, whitesmoke);
 }
 .box-html.light::before {
-  background: linear-gradient(to bottom,white,white,rgb(247, 158, 75) 80%,whitesmoke);
-  opacity: 1;
+  background: linear-gradient(to bottom, white, white, rgb(247, 158, 75) 80%,whitesmoke);
 }
 .box-css.light::before {
-  background: linear-gradient(to bottom,white,white,#2b90e7 80%,rgb(218, 217, 217));
-  opacity: 1;
+  background: linear-gradient(to bottom, white, white, #2b90e7 80%,rgb(218, 217, 217));
 }
 .box-node.light::before {
   background: linear-gradient(to bottom, white, white, #3c873a 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-express.light::before {
   background: linear-gradient(to bottom, white, white, #3c873a 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-mongo.light::before {
   background: linear-gradient(to bottom, white, white, rgb(77, 179, 61) 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-vagrant.light::before {
   background: linear-gradient(to bottom, white, white, #2E71E5 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-jira.light::before {
   background: linear-gradient(to bottom, white, white, rgb(1,70,179) 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-gitlab.light::before {
   background: linear-gradient(to bottom, white, white, #e24329 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-mui.light::before {
   background: linear-gradient(to bottom, white, white, rgb(154, 83, 197) 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-adobe.light::before {
   background: linear-gradient(to bottom, white, white, #d53538 80%, rgb(218, 217, 217));
-  opacity: 1;
 }
 
 .box-react.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #61dbfb 70%, whitesmoke);
-  opacity: 1;
 }
 .box-js.dark::before {
-  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light),  #3178c6 70%, whitesmoke);
-  opacity: 1;
+  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #3178c6 70%, whitesmoke);
 }
 .box-html.dark::before {
-  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light),rgb(247, 158, 75) 70%,whitesmoke);
-  opacity: 1;
+  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), rgb(247, 158, 75) 70%,whitesmoke);
 }
 .box-css.dark::before {
-  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light),#2b90e7 70%,rgb(218, 217, 217));
-  opacity: 1;
+  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #2b90e7 70%,rgb(218, 217, 217));
 }
 .box-node.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #3c873a 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-express.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #3c873a 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-mongo.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), rgb(77, 179, 61) 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-vagrant.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #2E71E5 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-jira.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), rgb(1,70,179) 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-gitlab.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #e24329 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-mui.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), rgb(154, 83, 197) 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 .box-adobe.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #d53538 70%, rgb(218, 217, 217));
-  opacity: 1;
 }
 
 .box-react:hover::before,
@@ -561,6 +542,11 @@
   transition: 0.5s ease-in-out;
 }
 
+.box-react:hover,
+.box-js:hover,
+.box-html:hover {
+  color: black;
+}
 .box-css:hover,
 .box-node:hover,
 .box-express:hover,
