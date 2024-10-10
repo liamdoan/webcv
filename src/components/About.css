@@ -90,7 +90,7 @@
   border: 1px solid black;
 }
 .cvpic.dark {
-  border: 1px solid white;
+  border: 1px solid var(--dark-theme-font-color);
 }
 .cvpic img{
   width: 100%;
