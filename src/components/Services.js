@@ -1,13 +1,15 @@
 import React, {useState, useEffect} from 'react'
-import './Services.css'
+import { useTheme } from '../context/ThemeContext'
 import { faCss3Alt, faHtml5, faNode, faNodeJs, faJira, faGitlab, faReact, faUikit } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AdobeLogo from '../img/logo/adobe-logo-1.svg'
 import JSTSLogo from '../img/logo/logo-jsts.png'
 import MongoLogo from '../img/logo/logo-mongo.svg'
 import VagrantLogo from '../img/logo/logo-vagrant.png'
- 
+import './Services.css'
+
 const Services = () => {
+    const {theme} = useTheme();
 
     const [offsetY, setOffsetY] = useState()
     const handleScroll = () => setOffsetY(window.pageYOffset)
@@ -18,19 +20,19 @@ const Services = () => {
     }, [])
  
     return (
-        <div id="services" className="services">
-            <h1 className="services-title"
+        <div id="services" className={`services ${theme}`}>
+            <h1 className={`services-title ${theme}`}
                 style={{transform: `translateY(${offsetY * 0.03}px)`}}
                 >
                 key competencies</h1> 
-                <p className="sub-services-title"
+                <p className={`sub-services-title ${theme}`}
                     style={{transform: `translateY(${offsetY * 0.04}px)`}}
                     >(and on my way to acquire more ...)</p>
-            <h1 className="services-big-title"
+            <h1 className={`services-big-title ${theme}`}
                 style={{transform: `translateY(${offsetY * 0.1}px)`}}
                 > 
                 developer</h1>
-            <div className="services-quote"
+            <div className={`services-quote ${theme}`}
                 style={{transform: `translateY(${offsetY * 0.01}px)`}}
                 >
                 <h1 className="upper-quote">
@@ -41,7 +43,7 @@ const Services = () => {
                 </h1>
             </div>
                 <div className="container services-container">
-                    <div className="row services-row"
+                    <div className={`row services-row ${theme}`}
                         style={{transform: `translateY(-${offsetY * 0.03}px)`}}
                         >
                         <div className="col-lg-2 col-md-4 col-sm-4"
@@ -49,8 +51,8 @@ const Services = () => {
                                 data-aos-duration="700"
                                 data-aos-once="true"
                                 data-aos-delay='200'> 
-                            <div className="box-wrap">
-                                <div className="box-react">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-react ${theme}`}>
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-react" icon={faReact} size ="2x" />
                                     </div>
@@ -64,8 +66,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='300'>
-                            <div className="box-wrap">
-                                <div className="box-js">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-js ${theme}`}>
                                     <div className="icon-wrap">
                                         <img className="icon-jsts" src={JSTSLogo} alt="jsts-logo" />
                                     </div>
@@ -79,8 +81,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='400'>
-                            <div className="box-wrap">
-                                <div className="box-html">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-html ${theme}`}>
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-html" icon={faHtml5} size ="2x" />
                                     </div>
@@ -94,8 +96,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='500'>
-                            <div className="box-wrap">
-                                <div className="box-css">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-css ${theme}`}>
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-css" icon={faCss3Alt} size ="2x" />
                                     </div>
@@ -109,8 +111,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='600'>
-                            <div className="box-wrap">
-                                <div className="box-node">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-node ${theme}`}>
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-node" icon={faNode} size ="2x" />
                                     </div>
@@ -124,8 +126,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='600'>
-                            <div className="box-wrap">
-                                <div className="box-express">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-express ${theme}`}>
                                     <div className="icon-wrap-express">
                                         <span className='express-span'>express</span>
                                         <FontAwesomeIcon className="icon-express" icon={faNodeJs} size ="1x" />
@@ -140,8 +142,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='600'>
-                            <div className="box-wrap">
-                                <div className="box-mongo">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-mongo ${theme}`}>
                                     <div className="icon-wrap">
                                         <img className="icon-mongo" src={MongoLogo} alt="mongo-logo" />
                                     </div>
@@ -155,8 +157,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='600'>
-                            <div className="box-wrap">
-                                <div className="box-vagrant">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-vagrant ${theme}`}>
                                     <div className="icon-wrap">
                                         <img className="icon-vagrant" src={VagrantLogo} alt="mongo-logo" />
                                     </div>
@@ -170,8 +172,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='600'>
-                            <div className="box-wrap">
-                                <div className="box-jira">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-jira ${theme}`}>
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-jira" icon={faJira} size ="2x" />
                                     </div>
@@ -185,8 +187,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='600'>
-                            <div className="box-wrap">
-                                <div className="box-gitlab">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-gitlab ${theme}`}>
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-gitlab" icon={faGitlab} size ="2x" />
                                     </div>
@@ -200,8 +202,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='600'>
-                            <div className="box-wrap">
-                                <div className="box-mui">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-mui ${theme}`}>
                                     <div className="icon-wrap">
                                         <FontAwesomeIcon className="icon-mui" icon={faUikit} size ="2x" />
                                     </div>
@@ -215,8 +217,8 @@ const Services = () => {
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                                 data-aos-delay='700'>
-                            <div className="box-wrap">
-                                <div className="box-adobe">
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-adobe ${theme}`}>
                                     <div className="icon-wrap">
                                         <img className="icon-adobe" src={AdobeLogo} alt="adobe-logo" />
                                     </div>
