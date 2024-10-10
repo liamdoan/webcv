@@ -1,17 +1,17 @@
-/* About Section */
 .about {
-  background: white;
   position: relative;
-  padding-left: 35px;
-  /* padding-left: 35px; */
-  padding-right: 35px;
-  padding-top: 3rem;
-  padding-bottom: 15rem;
+  padding: 3rem 35px 15rem 35px;
+  transition: 0.3s ease-in-out;
   z-index: -1;
+}
+.about.light {
+  background: white;
+}
+.about.dark {
+  background: var(--dark-theme-black-light);
 }
 
 /* --------QUOTE BACKGROUND -----------  */
-
 .about-quote {
   position: absolute;
   bottom: 65%;
@@ -22,11 +22,18 @@
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  color: rgb(255, 255, 255);
   overflow: hidden;
   white-space: nowrap;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   z-index: 0;
+}
+.about-quote.light {
+  color: rgb(255, 255, 255);
   text-shadow: 10px 10px 15px rgb(223, 223, 223);
+}
+.about-quote.dark {
+  color: var(--dark-theme-black-light);
+  text-shadow: 10px 15px 30px rgba(15, 15, 15, 0.9);
 }
 
 .about-upper-quote {
@@ -47,31 +54,23 @@
 }
 
 /* --------------CONTENT --------------- */
-.cvpic {
-  width: 16rem;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 50%;
-}
-
 .about-wrap {
-  background-color: white;
   position: relative;
-  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.5);
   margin-right: 20px;
   margin-left: 20px;
   padding-top: 2rem;
   padding-bottom: 3rem;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
   z-index: 3;
 }
-
-.about-heading {
-  color: black;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  margin-left: 33px;
-  margin-right: 33px;
+.about-wrap.light {
+  background-color: white;
+  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.5);
+}
+.about-wrap.dark {
+  background-color: var(--dark-theme-black);
+  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.8);
 }
 
 .picwrap {
@@ -79,12 +78,46 @@
   justify-content: center;
 }
 
+.cvpic {
+  border-radius: 50%;
+  width: 16rem;
+  height: 16rem;
+  padding: 10px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.cvpic.light {
+  border: 1px solid black;
+}
+.cvpic.dark {
+  border: 1px solid white;
+}
+.cvpic img{
+  width: 100%;
+}
+
+.about-text-wrap {
+  transition: 0.3s ease-in-out;
+}
+.about-text-wrap.light {
+  color: black;
+}
+.about-text-wrap.dark {
+  color: var(--dark-theme-font-color);
+}
+
+.about-heading {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
 .about-text {
   margin-left: 33px;
   margin-right: 33px;
   text-align: justify;
   font-size: 15px;
-  color: rgba(0, 0, 0, 1);
   opacity: 0.9;
 }
 

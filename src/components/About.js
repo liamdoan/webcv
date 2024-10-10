@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import CvPic from "../img/cvpic.png"
+import { useTheme } from '../context/ThemeContext'
 import './About.css'
 
 const About = () => { 
-
+    const {theme} = useTheme();
     const [offsetY, setOffsetY] = useState()
     const handleScroll = () => setOffsetY(window.pageYOffset)
 
@@ -13,8 +14,8 @@ const About = () => {
     }, [])
   
     return (
-        <div id="about" className="about">
-                <div className="about-quote"
+        <div id="about" className={`about ${theme}`}>
+                <div className={`about-quote ${theme}`}
                 style={{transform: `translateY(${offsetY * 0.095}px)`}}
                 >
                     <h1 className="about-upper-quote">
@@ -24,19 +25,22 @@ const About = () => {
                         never negative„
                     </h1>
                 </div>     
-            <div className="row about-wrap">
+            <div className={`row about-wrap ${theme}`}>
                 <div className="col-lg-6 col-xm-12">
-                    <div className="picwrap mb-5"> 
-                        <img className="cvpic" 
-                            src={CvPic} 
-                            alt="author" 
-                            data-aos='fade-down'
-                            data-aos-duration="500"
-                            // data-aos-once="true"
-                            data-aos-delay='100'/>
+                    <div className="picwrap mb-5">
+                        <div className={`cvpic ${theme}`}>
+                            <img
+                                src={CvPic}
+                                alt="author"
+                                data-aos='fade-down'
+                                data-aos-duration="500"
+                                // data-aos-once="true"
+                                data-aos-delay='100'
+                            />
+                        </div>
                     </div>
                 </div>
-                <div className="col-lg-6 col-xm-12 about-text-wrap">
+                <div className={`col-lg-6 col-xm-12 about-text-wrap ${theme}`}>
                     <h1 className="about-heading"
                         data-aos='fade-up'
                         data-aos-duration="1000"
