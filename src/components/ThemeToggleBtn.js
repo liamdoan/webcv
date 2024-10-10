@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import './ThemeToggleBtn.css'; // Import the CSS for styling
+import {ReactComponent as IconSun} from '../img/icon/sun.svg';
+import {ReactComponent as IconMoon} from '../img/icon/moon.svg';
+import './ThemeToggleBtn.css';
 
 const ThemeToggleBtn = () => {
     const { theme, toggleTheme } = useTheme();
@@ -16,6 +18,8 @@ const ThemeToggleBtn = () => {
             />
             <label htmlFor="theme-toggle" className="toggle-label">
                 <div className="toggle-ball" />
+                <IconSun className={`icon-sun ${theme}`}/>
+                <IconMoon className={`icon-moon ${theme}`}/>
             </label>
         </div>
     );
