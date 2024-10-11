@@ -1,11 +1,9 @@
 import styled from 'styled-components'
-import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 
 export const Nav = styled.nav`
-background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent') };
-/* background: black; */
+background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent')};
 height: 80px;
 margin-top: -80px;
 display: flex;
@@ -31,7 +29,6 @@ z-index: 1;
 width: 100%;
 padding: 0;
 max-width: 1100px;
-/* background-color: blue; */
 `
 
 export const NavLogo = styled.div`
@@ -44,7 +41,6 @@ align-items: center;
 margin-left: 24px;
 font-weight: 350;
 text-decoration: none;
-/* background-color: pink; */
 `
 
 export const MobileIcon = styled.div`
@@ -58,8 +54,7 @@ display: none;
     transform: translate(-100%, 40%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: ${({scrollNav}) => (scrollNav ? 'white' : '#231f20') };
-    
+    color: ${({scrollNav}) => (scrollNav ? 'white' : '#231f20')};
 }
 `
 
@@ -74,7 +69,6 @@ align-items: center;
 list-style: none;
 text-align: center;
 margin-right: -22px;
-/* background-color: red; */
 position: relative;
 top: 14px;
 
@@ -85,11 +79,9 @@ top: 14px;
 
 export const NavItem = styled.li`
 height: 80px;
-/* background-color: pink; */
 `
 
 export const NavLinks = styled(LinkScroll)`
-/* background-color: blue; */
 color: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? 'white' : '#231f20') : 'white')};
 display: flex;
 align-items: center;
@@ -104,24 +96,20 @@ font-weight: 350;
 letter-spacing: 0.1px;
 
 &:hover {
-    /* color: var(--dark-orange) */
     color: var(--golden);
 }
 
 &.active{
-    /* border-bottom: 7px solid var(--dark-orange); */
-    /* color: var(--dark-orange); */
     border-bottom: 7px solid var(--golden);
     font-weight: 600;
     transition: 0.3s ease-in-out;
 }
-`  
+`
 
 export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
 margin-right: 24px;
-/* background-color: red; */
 
 @media screen and (max-width: 768px){
     display: none;
@@ -129,26 +117,32 @@ margin-right: 24px;
 `
 
 export const NavBtnLink = styled(LinkScroll)`
-/* border-radius: 50px; */
-background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent') };
+background: ${({scrollNav, theme}) => (
+    theme === 'light'
+    ? (scrollNav ? 'black' : 'transparent')
+    : 'linear-gradient(to bottom right, rgba(137, 137, 137, 0.5), var(--dark-theme-black));'
+)};
 white-space: nowrap;
 padding: 10px 22px;
-color: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? 'white' : '#231f20') : 'white')};
 font-size: 15px;
 outline: none;
-border: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? '1px solid white' : '1px solid black') : '1px solid white')};
-cursor: pointer;
-transition: all 0.5s ease-in-out;
 text-decoration: none;
 text-transform: uppercase;
 font-weight: 400;
 letter-spacing: 0.2px;
 margin-right: 1.5rem;
+color: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? 'white' : '#231f20') : 'var(--dark-theme-font-color)')};
+box-shadow: ${({theme}) => theme === 'light' ? 'none' : '7px 7px 10px black, inset 0px 0px 6px rgba(109, 123, 133, 0.5)'};
+border-radius: ${({theme}) => (theme === 'light' ? 0 : '10px')};
+border: ${({scrollNav, theme}) => (theme === 'light' ? (scrollNav ? '1px solid white' : '1px solid black') : 'none')};
+cursor: pointer;
+transition: all 0.3s ease-in-out;
 
 &:hover{
-transition: all 0.3s ease-in-out;
-background: var(--golden);
 color: white;
-border: 1px solid var(--golden);
+transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
+transform: ${({theme}) => theme === 'dark' && 'translateY(3px)'};
+background: ${({theme}) => theme === 'light' && 'var(--golden)' };
+border: ${({theme}) => theme === 'light' && '1px solid var(--golden)'};
 }
 `
