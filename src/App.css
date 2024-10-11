@@ -12,8 +12,11 @@
   --light-blue: #7395ae;
   --golden: #ad974f;  /* rgb(173, 151, 79) */
 
-  --dark-theme-black: #191919;
-  --dark-theme-black-light: #212121; /* rgb(43, 43, 43) */
+  --light-theme-bg-layer-black-rgb: 0, 0, 0;
+  --dark-theme-bg-layer-black-rgb: 33, 33, 33;
+
+  --dark-theme-black: rgb(25, 25, 25);
+  --dark-theme-black-light: rgb(33, 33, 33); /* rgb(43, 43, 43) */
   --dark-theme-gray: #86868B;
   --dark-theme-font-color: rgb(214, 214, 214);
   --dark-theme-emboss-shadow: rgba(20, 20, 20, 1);

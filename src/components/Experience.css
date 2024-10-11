@@ -1,13 +1,27 @@
-/* Experience Section */
 .experience {
   padding-left: 1rem;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.experience.light {
+  background: linear-gradient(
+    to right,
+    rgba(var(--light-theme-bg-layer-black-rgb), 0.8),
+    rgba(var(--light-theme-bg-layer-black-rgb), 0.5)),
     url(../img/background/background-1.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+}
+.experience.dark {
+  background: linear-gradient(
+    to right,
+    rgba(var(--dark-theme-bg-layer-black-rgb), 1),
+    rgba(var(--dark-theme-bg-layer-black-rgb), 0.8)),
+  url(../img/background/background-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .experience-header {
@@ -37,7 +51,7 @@
 }
 
 .timeline-block {
-  width: calc(50% + 8px);
+  width: calc(50% + 14px);
   display: flex;
   justify-content: space-between;
   clear: both;
@@ -46,10 +60,16 @@
 .timeline-block-right {
   float: right;
 }
+.timeline-block-right .timeline-content-wrap {
+  margin-left: 1rem;
+}
 
 .timeline-block-left {
   float: left;
   direction: rtl;
+}
+.timeline-block-left .timeline-content-wrap {
+  margin-right: 1rem;
 }
 
 .marker {
@@ -68,11 +88,27 @@
   border: 2px solid white;
 }
 
-.timeline-content {
+.timeline-content-wrap {
+  position: relative;
+  top: -15px;
   width: 100%;
-  padding: 0 15px;
-  color: rgb(220, 220, 220);
+  padding: 15px;
+  margin-bottom: 15px;
   direction: ltr;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-content {
+}
+.timeline-content-wrap.light {
+  background-color: transparent;
+  color: rgb(220, 220, 220);
+}
+.timeline-content-wrap.dark {
+  background-color: var(--dark-theme-black);
+  color: var(--dark-theme-font-color);
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 1);
 }
 
 .timeline-content h3 {
@@ -126,7 +162,6 @@
   font-size: 15px;
   font-style: italic;
   font-weight: 500;
-  margin-bottom: 20px;
 }
 .title-skill-keywords-info {
   font-weight: 300;
@@ -150,6 +185,10 @@
   .timeline-block-left {
     direction: ltr;
     width: 100%;
+  }
+  .timeline-block-left .timeline-content-wrap {
+    margin-left: 1rem;
+    margin-right: 0;
   }
 }
 
