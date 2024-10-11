@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import { useTheme } from '../context/ThemeContext'
 import MyWorkCardItem from './MyWorkCardItem'
-import './MyWork.css'
 import project6 from '../img/thumbnails/thumbnail-6.jpg'
 import project5 from '../img/thumbnails/thumbnail-5.jpg'
 import project4 from '../img/thumbnails/thumbnail-4.JPG'
@@ -10,9 +10,10 @@ import project1 from '../img/thumbnails/thumbnail-1.jpg'
 import project7 from '../img/thumbnails/thumbnail-7.jpg'
 import {PopupboxManager, PopupboxContainer} from 'react-popupbox'
 import "react-popupbox/dist/react-popupbox.css"
-
+import './MyWork.css'
 
 function MyWork() {
+    const {theme} = useTheme();
 
     const [offsetY, setOffsetY] = useState()
     const handleScroll = () => setOffsetY(window.pageYOffset)
@@ -21,7 +22,6 @@ function MyWork() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
-
 
     // -----------------------------Project 1 
     const openPopup1 = () => {
@@ -75,7 +75,6 @@ function MyWork() {
         fadeinSpeed: 500
     };     
 
-
      // -----------------------------Project 3 
      const openPopup3 = () => { 
         const content = (
@@ -103,7 +102,6 @@ function MyWork() {
         fadeinSpeed: 500
     };     
 
-    
     // -------------------------------------Project 4
     const openPopup4 = () => {
         const content = (
@@ -131,7 +129,6 @@ function MyWork() {
         fadeinSpeed: 500
     };
  
-
     // ------------------------------------Project 5
     const openPopup5 = () => {
         const content = (
@@ -158,8 +155,6 @@ function MyWork() {
         fadeIn: true,
         fadeinSpeed: 500
     };
-
-
 
      // -----------------------------Project 6
      const openPopup6 = () => {
@@ -189,7 +184,6 @@ function MyWork() {
         fadeIn: true,
         fadeinSpeed: 500
     };
-
 
      // -----------------------------Project 7
      const openPopup7 = () => {
@@ -223,9 +217,8 @@ function MyWork() {
         fadeinSpeed: 500
     };
 
-
     return ( 
-        <div id="portfolio" className="cards">
+        <div id="portfolio" className={`cards ${theme}`}>
             {/* <div className="mywork-content"> */}
             <h1 className="head-line"
                 style={{transform: `translateY(${offsetY * 0.09}px)`}}

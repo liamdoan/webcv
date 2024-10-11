@@ -1,16 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Aos from 'aos'
 import { useEffect } from 'react';
+import { useTheme } from '../context/ThemeContext'
 import 'aos/dist/aos.css';
 
-
-function MyWorkCardItem(props) { 
+function MyWorkCardItem(props) {
+    const {theme} = useTheme();
 
     useEffect(() => {
         Aos.init({})
-      }, []) 
-  
+    }, [])
+
     return (
         <>
             <div className="cards-item"
@@ -24,16 +24,17 @@ function MyWorkCardItem(props) {
                     <div className="number">
                          {props.number}
                     </div>
-                    <div className="overlay">
-                    </div>
-                <div className="cards-item-link">
+                    <div className={`overlay ${theme}`}></div>
+                <div className={`cards-item-link ${theme}`}>
                     <figure className="cards-item-pic-wrap" data-category={props.label}>
-                       <img src={props.src} alt="Project image" 
-                           className="cards-item-img" />
+                        <img
+                            src={props.src}
+                            alt="Project image"
+                            className="cards-item-img"
+                        />
                     </figure>
-
                     <div className="cards-item-info">
-                        <h5 className="cards-item-text">
+                        <h5 className={`cards-item-text ${theme}`}>
                            {props.text}
                         </h5>
                     </div>
@@ -43,4 +44,4 @@ function MyWorkCardItem(props) {
     )
 }
 
-export default MyWorkCardItem
+export default MyWorkCardItem;
