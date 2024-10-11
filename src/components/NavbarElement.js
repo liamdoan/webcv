@@ -3,7 +3,7 @@ import { Link as LinkScroll } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 
 export const Nav = styled.nav`
-background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent')};
+background: ${({scrollNav, theme}) => theme === 'light' ? (scrollNav ? 'black' : 'transparent'): ((scrollNav ? 'var(--dark-theme-black)' : 'transparent'))};
 height: 80px;
 margin-top: -80px;
 display: flex;
@@ -14,7 +14,11 @@ position: sticky;
 top: 0; 
 z-index: 10;
 transition: 0.5s ease-in-out;
-
+width: ${({theme}) => theme === 'light' ? '100%' : '95%'};
+margin-left: ${({theme}) => theme === 'light' ? '0' : 'auto'};
+margin-right: ${({theme}) => theme === 'light' ? '0' : 'auto'};
+border-radius: ${({theme}) => theme === 'light' ? '0' : '20px'};
+box-shadow: ${({scrollNav, theme}) => theme === 'light' ? 'none' : ((scrollNav ? '3px 3px 25px rgba(0, 0, 0, 1), inset 0px 0px 8px rgba(109, 123, 133, 0.3)' : 'none'))};
 
 @media screen and (max-width: 960px) {
     transition: 0.5s ease-in-out;

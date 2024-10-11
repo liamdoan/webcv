@@ -65,7 +65,7 @@ const Navbar = ({toggle}) => {
     return (   
         <>
             {/* <Nav style={style}> */}
-            <Nav scrollNav={scrollNav}>
+            <Nav scrollNav={scrollNav} theme={theme}>
                 <NavbarContainer>
                     <NavLogo to="/" onClick={scrollHome} scrollNav={scrollNav} theme={theme}>
                         Lam Doan
