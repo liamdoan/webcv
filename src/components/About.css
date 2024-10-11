@@ -33,7 +33,7 @@
 }
 .about-quote.dark {
   color: var(--dark-theme-black-light);
-  text-shadow: 10px 15px 30px rgba(15, 15, 15, 0.9);
+  text-shadow: 10px 15px 30px var(--dark-theme-quote-shadow);
 }
 
 .about-upper-quote {
