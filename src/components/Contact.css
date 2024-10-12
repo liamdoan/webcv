@@ -1,6 +1,12 @@
 /* Contact */
 .contact {
-  background: black;
+  transition: background-color 0.3s ease-in-out;
+}
+.contact.light {
+  background-color: black;
+}
+.contact.dark {
+  background-color: var(--dark-theme-black);
 }
 
 .contact h1 {
@@ -28,22 +34,30 @@ label {
   color: red;
 }
 
-.contact input,
-.contact textarea {
+.contact .form-control {
   width: 100%;
   box-sizing: border-box;
   background-color: transparent;
   resize: none;
-  border: none;
-  border: 1px solid rgb(123, 123, 123);
   border-radius: 5px;
   color: var(--gray);
   outline: 0 !important;
-  box-shadow: none !important;
   top: 0;
+  border: none;
   margin-bottom: 5px;
   margin-top: 12px;
   padding: 8px;
+  transition: 0.3s ease-in-out;
+}
+.contact .form-control.light {
+  border: 1px solid rgb(123, 123, 123);
+  box-shadow: none !important;
+}
+.contact .form-control.dark {
+  border: 1px solid transparent;
+  box-shadow: 
+    inset 5px 5px 10px rgba(0, 0, 0, 0.8),
+    inset -1px -1px 10px rgba(109, 123, 133, 0.5);
 }
 
 .contact .container {
@@ -75,8 +89,6 @@ textarea:focus + .line {
 .contact-btn {
   width: 100%;
   margin: 20px 0 0 0;
-  background: none;
-  border: 1px solid #ad974f;
   text-transform: uppercase;
   padding: 9px 25px 9px 25px;
   text-decoration: none;
@@ -86,12 +98,32 @@ textarea:focus + .line {
   letter-spacing: 0.2px;
   transition: 0.3s ease-in-out;
 }
+.contact-btn.light {
+  border-radius: 0;
+  border: 1px solid #ad974f;
+  background-color: transparent;
+}
+.contact-btn.dark {
+  color: var(--dark-theme-font-color);
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(137, 137, 137, 0.5),
+    var(--dark-theme-black)
+  );
+  box-shadow: 7px 7px 10px black, inset 0px 0px 6px rgba(109, 123, 133, 0.5);
+}
 
-.contact-btn:hover {
+.contact-btn.light:hover {
   background-color: #ad974f;
   color: black;
   border: 1px solid #ad974f;
-  transition: 0.3s ease-in-out;
+}
+.contact-btn.dark:hover {
+  color: white;
+  transform: translateY(3px);
+  transition: transform 0.2s ease-in-out box-shadow 0.2s ease-in-out;
+  box-shadow: 7px 7px 10px black, inset 0px 0px 6px rgba(109, 123, 133, 1);
 }
 
 .err-msg {

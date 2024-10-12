@@ -27,7 +27,7 @@
   color: black;
 }
 .services-title.dark {
-  color: white
+  color: white;
 }
 
 .sub-services-title {
@@ -184,7 +184,7 @@
 }
 .services-row.dark {
   background-color: var(--dark-theme-black);
-  box-shadow: 
+  box-shadow:
     7px 7px 25px black, 
     inset 0px 0px 10px rgba(109, 123, 133, 0.4);
 }

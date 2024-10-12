@@ -1,10 +1,13 @@
 import React from 'react'
-import './Contact.css'
+import { useTheme } from '../context/ThemeContext'
 import { useState } from 'react';
 import emailjs  from '@emailjs/browser'
 import { useForm } from 'react-hook-form';
+import './Contact.css'
 
 const Contact = () => {
+    const {theme} = useTheme();
+
     const [successMessage, setSuccessMessage] = useState()
     const [errorMessage, setErrorMessage] = useState()
 
@@ -43,7 +46,7 @@ const Contact = () => {
       };
 
     return (
-        <div id="contact" className="contact"> 
+        <div id="contact" className={`contact ${theme}`}>
             <div className="text-center">
                 <h1>Contact Me</h1>
                 <p className="desc">Please fill in the form and let's collab</p>
@@ -66,7 +69,7 @@ const Contact = () => {
                             <label>Name <span className="required-star">*</span></label>        
                             <input type="text"
                                     id="name"
-                                    className="form-control"
+                                    className={`form-control ${theme}`}
                                     name="name" 
                                     {...register("name",{
                                             required: "Enter your name",
@@ -85,7 +88,7 @@ const Contact = () => {
                             <label>Phone</label>
                             <input type="tel"
                                     id="phone"
-                                    className="form-control"
+                                    className={`form-control ${theme}`}
                                     name="phone"
                                     {...register("phone",{
                                         pattern: {
@@ -103,7 +106,7 @@ const Contact = () => {
                             <label>Email <span className="required-star">*</span></label> 
                             <input type="email"
                                     id="email"
-                                    className="form-control"
+                                    className={`form-control ${theme}`}
                                     name="email" 
                                     {...register("email",{
                                         required: "Enter your email",
@@ -122,7 +125,7 @@ const Contact = () => {
                             <label>Company/Organization</label>
                             <input type="text"
                                     id="company"
-                                    className="form-control"
+                                    className={`form-control ${theme}`}
                                     name="company" 
                                     {...register("company",{
                                         maxLength: {
@@ -139,7 +142,7 @@ const Contact = () => {
                              <label>Subject <span className="required-star">*</span></label>
                             <input type="text"
                                     id="subject"
-                                    className="form-control"
+                                    className={`form-control ${theme}`}
                                     name="subject" 
                                     {...register("subject",{
                                         required: "Don't forget to add your subject"
@@ -154,7 +157,7 @@ const Contact = () => {
                             <label>Message <span className="required-star">*</span></label>  
                             <textarea type="text"
                                         id="message"
-                                        className="form-control"
+                                        className={`form-control ${theme}`}
                                         name="message" 
                                         {...register("message",{
                                             required: "What is your message?"
@@ -164,7 +167,7 @@ const Contact = () => {
                             <p className="err-msg">
                                 {errors.message && errors.message.message}
                             </p>
-                            <button className="btn-main-offer contact-btn"
+                            <button className={`btn-main-offer contact-btn ${theme}`}
                                     type="submit"
                                     >
                                     Contact Me
