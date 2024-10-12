@@ -50,19 +50,20 @@ export const MobileIcon = styled.div`
 display: none;
 
 @media screen and (max-width: 768px){
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 40%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: ${({scrollNav}) => (scrollNav ? 'white' : '#231f20')};
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+transform: translate(-100%, 40%);
+font-size: 1.8rem;
+cursor: pointer;
+color: ${({scrollNav}) => (scrollNav ? 'white' : '#231f20')};
 }
 `
 
 export const StyledFaBars = styled(FaBars)`
-    color: ${({theme}) => theme === 'light' ? 'black' : 'white'};
+color: ${({scrollNav, theme}) => theme === 'light' ? (scrollNav ? 'white' : 'black') : 'white'};
+transition: 0.3s ease-in-out;
 `
 
 export const NavMenu = styled.ul`
@@ -76,7 +77,7 @@ position: relative;
 top: 14px;
 
 @media screen and (max-width: 768px) {
-    display: none;
+display: none;
 } 
 `
 

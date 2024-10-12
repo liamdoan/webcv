@@ -71,7 +71,7 @@ const Navbar = ({toggle}) => {
                         Lam Doan
                     </NavLogo>
                     <MobileIcon onClick={toggle} scrollNav={scrollNav}>
-                        <StyledFaBars theme={theme} />
+                        <StyledFaBars scrollNav={scrollNav} theme={theme} />
                     </MobileIcon >
                     <NavMenu>
                     <NavItem>
