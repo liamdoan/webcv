@@ -1,16 +1,13 @@
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa'
 import { Link as LinkScroll } from 'react-scroll'
-import { Link as LinkRoute } from 'react-router-dom'
  
-
 export const SidebarContainer = styled.aside`
 position: fixed;
 z-index: 999;
 width: 100%;
 height: 100%;
-/* background: rgba(13,13,13, 0.8); */
-background: black;
+background: ${({theme}) => theme === 'light' ? 'black' : 'var(--dark-theme-black)'};
 display: grid;
 align-items: center;
 top: 0;
@@ -45,15 +42,12 @@ grid-template-rows: repeat(5, 80px);
 text-align: center;
 transform: translateX(-15px);
 
-
-
 @media screen and (max-width: 480px){
 grid-template-rows: repeat(5, 60px);
 }
 `
 
 export const SidebarLink = styled(LinkScroll)`
-/* background-color: pink; */
 display: flex;
 align-items: center;
 justify-content: center;
@@ -77,13 +71,11 @@ export const SocialIcons = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
-/* background-color: red; */
 margin: 10px 0 35px 0;
 `
 
 export const GithubLink = styled.a`
 `
-
 export const LinkedinLink = styled.a`
 `
 
@@ -107,25 +99,27 @@ align-items: center;
 `
 
 export const SidebarRoute = styled(LinkScroll)`
-text-decoration: none;
-border-radius: 0px;
-background: transparent;
+background: ${({theme}) => theme === 'light' ? 'transparent' : 'linear-gradient(to bottom right, rgba(137, 137, 137, 0.5), var(--dark-theme-black))'};
 white-space: nowrap;
 padding: 16px 64px;
 margin-bottom: 4rem;
-color: white;
 font-size: 20px;
 font-weight: 350;
 letter-spacing: 1px;
+text-decoration: none;
 outline: none;
-border: 1px solid white;
+color: ${({theme}) => theme === 'light' ? 'white' : 'var(--dark-theme-font-color)'};
+border: ${({theme}) => (theme === 'light' ? '1px solid white' : 'none')};
+border-radius: ${({theme}) => (theme === 'light' ? 0 : '10px')};
+box-shadow: ${({theme}) => theme === 'light' ? 'none' : '7px 7px 10px black, inset 0px 0px 6px rgba(109, 123, 133, 0.5)'};
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 
 &:hover{
+color: white;
 transition: all 0.2s ease-in-out;
-background:#ad974f;
-border: 1px solid #ad974f;
-color: #010606;
+transform: ${({theme}) => theme === 'dark' && 'translateY(3px)'};
+background: ${({theme}) => theme === 'light' && 'var(--golden)'};
+border: ${({theme}) => theme === 'light' && '1px solid var(--golden)'};
 }
 `
