@@ -106,7 +106,7 @@ function MyWork() {
     const openPopup4 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={project4} alt="ABCPhotography" />
+            <img className="img-popupbox" src={project4} alt="ABC-photography" />
             <p className="project-desc">Mockup of a photography service website built with React, which is focused on reusable button component with inline functions, 
                 grid layout, card info design and footer layout.
             </p>
@@ -133,7 +133,7 @@ function MyWork() {
     const openPopup5 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={project5} alt="ABCRestaurant" />
+            <img className="img-popupbox" src={project5} alt="ABC-restaurant" />
             <p className="project-desc">Mockup of a high-end restaurant website built with React and styled components, 
                 which is focused on passing data to similar components to avoid hard-code, grid designing and smooth scroll function.
             </p>
@@ -160,7 +160,7 @@ function MyWork() {
      const openPopup6 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={project6} alt="ABCConsultancy" />
+            <img className="img-popupbox" src={project6} alt="ABC-consultancy" />
             <p className="project-desc">Mockup of a Green Tech consultacy website built with React and styled-components. The focus of this project
                  is on layout design, pattern animation, transparent navigation bar, the ability to change the theme of patterns with inline functions and to re-use data for 
                  multiple components without hardcoding.
@@ -189,12 +189,12 @@ function MyWork() {
      const openPopup7 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={project7} alt="ABCConsultancy" />
+            <img className="img-popupbox" src={project7} alt="Zarosen-online-store" />
             <p className="project-desc">
                 Mockup of an online store website  </p>
-            <p className="project-desc">- Front-end: React, Redux and styled-components.</p>
-            <p className="project-desc">- Back-end: NodeJs/ MongoDB for research and practice purposes. </p>
-            <p className="project-desc">The focus of this project is on optimal responsive design, filter function (products' category, size, color), state management for front-end; log-in, log-out functions, send and store data (users' info, products' info) to database and payment for back-end.
+            <p className="project-desc">- Front-end: React, Redux, styled-components.</p>
+            <p className="project-desc">- Back-end: NodeJs, MongoDB. </p>
+            <p className="project-desc">The focus is on: optimal responsive design, filter function (categories, size, color), state management for front-end; log-in, log-out functions, send and store data (user info, product info) to database, payment with Stripe for back-end.
                 </p>
 
            
