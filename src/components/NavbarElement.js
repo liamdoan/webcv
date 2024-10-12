@@ -9,7 +9,6 @@ margin-top: -80px;
 display: flex;
 justify-content: center;
 align-items: center;
-/* font-size: 1rem; */
 position: sticky; 
 top: 0; 
 z-index: 10;
@@ -124,7 +123,7 @@ export const NavBtnLink = styled(LinkScroll)`
 background: ${({scrollNav, theme}) => (
     theme === 'light'
     ? (scrollNav ? 'black' : 'transparent')
-    : 'linear-gradient(to bottom right, rgba(137, 137, 137, 0.5), var(--dark-theme-black));'
+    : 'linear-gradient(to bottom right, rgba(137, 137, 137, 0.5), var(--dark-theme-black))'
 )};
 white-space: nowrap;
 padding: 10px 22px;
@@ -146,7 +145,7 @@ transition: all 0.3s ease-in-out;
 color: white;
 transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
 transform: ${({theme}) => theme === 'dark' && 'translateY(3px)'};
-background: ${({theme}) => theme === 'light' && 'var(--golden)' };
+background: ${({theme}) => theme === 'light' && 'var(--golden)'};
 border: ${({theme}) => theme === 'light' && '1px solid var(--golden)'};
 }
 `
