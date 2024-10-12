@@ -84,24 +84,6 @@ const Contact = () => {
                             <p className="err-msg">
                                 {errors.name && errors.name.message}
                             </p>
-                            {/* PHONE */}
-                            <label>Phone</label>
-                            <input type="tel"
-                                    id="phone"
-                                    className={`form-control ${theme}`}
-                                    name="phone"
-                                    {...register("phone",{
-                                        pattern: {
-                                            value: /[0-9]{4}[0-9]{3}[0-9]{3}/,
-                                            message: "Enter a valid phone number format"
-                                        }
-                                    })
-                                } 
-                                />
-                            <div className="line"></div>
-                            <p className="err-msg">
-                                {errors.phone && errors.phone.message}
-                            </p>
                             {/* EMAIL */}
                             <label>Email <span className="required-star">*</span></label> 
                             <input type="email"
@@ -120,6 +102,24 @@ const Contact = () => {
                             <div className="line"></div> 
                             <p className="err-msg">
                                 {errors.email && errors.email.message}
+                            </p>
+                            {/* PHONE */}
+                            <label>Phone</label>
+                            <input type="tel"
+                                    id="phone"
+                                    className={`form-control ${theme}`}
+                                    name="phone"
+                                    {...register("phone",{
+                                        pattern: {
+                                            value: /[0-9]{4}[0-9]{3}[0-9]{3}/,
+                                            message: "Enter a valid phone number format"
+                                        }
+                                    })
+                                }
+                                />
+                            <div className="line"></div>
+                            <p className="err-msg">
+                                {errors.phone && errors.phone.message}
                             </p>
                             {/* COMPANY */}
                             <label>Company/Organization</label>
