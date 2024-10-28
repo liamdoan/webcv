@@ -51,10 +51,10 @@ const About = () => {
                         data-aos-duration="700"
                         // data-aos-once="true"
                         data-aos-delay='400'>
-                        Always target beyond the peak on the job, highly valued team-playing skills which will help in completing and taking future projects even further. I’m interested in modern digital platforms, very enthusiastic in making my learning curve always go upwards by getting experiences from my seniors as well as discussing with cross-competence colleagues to deliver the best impact on clients’ business.
+                        Always target beyond the peak on the job, highly valued team-playing skills which will help in completing and taking future projects even further. I’m interested in modern digital platforms, very enthusiastic in making my learning curve always go upwards by getting experiences from my seniors, and discussing with cross-competence colleagues to deliver the best impact on clients’ business.
                         <br />
                         <br />
-                        My previous role to single-handedly oversee Frontend part in a talented team has given me a big chance to build user-friendly, robust, and scalable sites and solutions, work closely with backend engineers and UX/UI designers, which helps me learn and observe diverse viewpoints of potential technical aspects, as well as the initiative to look for new solutions, stay up to date with new technology trends, development, and specially the strong motivation to learn more.
+                        My previous role to single-handedly oversee Frontend part in a team has given me a big chance to build user-friendly, robust, scalable sites and solutions. I have worked closely with architect engineers and UX/UI designers, which helps me learn and observe diverse viewpoints of potential technical aspects. I always take the initiative to look for new solutions, stay up to date with new technology trends, development, and specially the strong motivation to learn more.
                     </p>
                 </div>
             </div>
