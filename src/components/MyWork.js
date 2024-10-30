@@ -242,15 +242,17 @@ function MyWork() {
             <>
                 <img className="img-popupbox" src={thumbnailZarosenStore} alt="Zarosen-online-store" />
                 <p className="project-desc">
-                    A full-stak online store website.</p>
+                    A full-stak online store website with optimal responsive design, filter (categories, size, color), state management for front-end; 
+                    log-in, log-out functions, send and store data (user info, product info) to database, payment with Stripe for back-end.
+                </p>
                 <p className="project-desc">
                     - Front-end: React, Redux, styled-components.
                 </p>
                 <p className="project-desc">
-                    - Back-end: NodeJs, MongoDB.
+                    - Back-end: ExpressJS, NodeJs, MongoDB.
                 </p>
-                <p className="project-desc">
-                    The focus is on: optimal responsive design, filter function (categories, size, color), state management for front-end; log-in, log-out functions, send and store data (user info, product info) to database, payment with Stripe for back-end.
+                <p className="project-desc project-desc-special">
+                    To be updated: admin panel to for product CRUD operation, user data management.
                 </p>
                 <b>Github: </b>
                     <a 
