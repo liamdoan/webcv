@@ -163,10 +163,20 @@ function MyWork() {
         const content = (
             <>
             <img className="img-popupbox" src={thumbnailTodoApp} alt="todo-webapp" />
-            <p className="project-desc">A fullstack to-do web app having functions to add/edit/delete/toggle-completed tasks 
-                and auto-generate different colors for different task lines. Task data is fetched from MongoDB database. ESLint and Prettier are used to enforce coding standards and format.
+            <p className="project-desc">
+                A fullstack to-do app with CRUD functions,
+                and auto-generating different colors for different task lines. ESLint and Prettier are used to enforce coding standards and format.
             </p>
             <p className="project-desc">
+                - Frontend: React.
+            </p>
+            <p className="project-desc">
+                - Backend: ExpressJS, NodeJS, MongoDB.
+            </p>
+            <p className="project-desc">
+                - Testing: Jest for unit testing, Cypress for end-to-end (E2E) testing.
+            </p>
+            <p className="project-desc project-desc-special">
                 Future applying and expanding: control/admin panel for other projects.
             </p>
             <b>Github:</b> <a className="hyper-link" 
@@ -246,7 +256,7 @@ function MyWork() {
                                 onClick={openPopup6}
                                 src={thumbnailTodoApp}
                                 text="To-do Web App"
-                                label="React/ NodeJS/ ExpressJS/ MongoDB"
+                                label="MERN/ Jest/ Cypress"
                                 path="/services"
                                 number="6"
                                 /> 
