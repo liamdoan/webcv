@@ -27,14 +27,21 @@ function MyWork() {
     const openPopup1 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={thumbnailWeatherApp} alt="weather-app" />
-            <p className="project-desc">A weather app built with React, using API fetching with the ability to change background based on certain temperature.
-            </p>
-            <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/weather_app")}>https://github.com/liamdoan/weather_app</a>
-            <br/>
-            <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://liamdoan.github.io/weather_app/")}>https://liamdoan.github.io/weather_app/</a>
+                <img className="img-popupbox" src={thumbnailWeatherApp} alt="weather-app" />
+                <p className="project-desc">
+                    A weather app built with React, using API fetching with the ability to change background based on certain temperature.
+                </p>
+                <b>Github: </b>
+                    <a
+                        className="hyper-link" 
+                        onClick={() => window.open("https://github.com/liamdoan/weather_app")}>https://github.com/liamdoan/weather_app
+                    </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a
+                        className="hyper-link" 
+                        onClick={() => window.open("https://liamdoan.github.io/weather_app/")}>https://liamdoan.github.io/weather_app/
+                    </a>
             </>
         )
     PopupboxManager.open({content})
@@ -53,14 +60,21 @@ function MyWork() {
     const openPopup2 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={thumbnailFoodRecipeApp} alt="food-recipes-app" />
-            <p className="project-desc">A food recipes app built with React focused on API fetching,  instant filtering function and 3D effect design.
-            </p>
-            <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/food_recipe_3d_design")}>https://github.com/liamdoan/food_recipe_3d_design</a>
-            <br/>
-            <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://liamdoan.github.io/food_recipe_3d_design/")}>https://liamdoan.github.io/food_recipe_3d_design/</a>
+                <img className="img-popupbox" src={thumbnailFoodRecipeApp} alt="food-recipes-app" />
+                <p className="project-desc">
+                    A food recipes app built with React focused on API fetching,  instant filtering function and 3D effect design.
+                </p>
+                <b>Github: </b>
+                    <a
+                        className="hyper-link" 
+                        onClick={() => window.open("https://github.com/liamdoan/food_recipe_3d_design")}>https://github.com/liamdoan/food_recipe_3d_design
+                    </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://liamdoan.github.io/food_recipe_3d_design/")}>https://liamdoan.github.io/food_recipe_3d_design/
+                    </a>
             </>
         )
     PopupboxManager.open({content})
@@ -79,17 +93,23 @@ function MyWork() {
     const openPopup3 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={thumbnailTechConsultant} alt="ABC-consultancy" />
-            <p className="project-desc">Mockup of a Green Tech consultacy website built with React and styled-components. The focus of this project
-                 is on layout design, pattern animation, transparent navigation bar, the ability to change the theme of patterns with inline functions and to re-use data for 
-                 multiple components without hardcoding.
-
-            </p>
-            <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/ABC_green_tech")}>https://github.com/liamdoan/ABC_green_tech</a>
-            <br/>
-            <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://liamdoan.github.io/ABC_green_tech")}>https://liamdoan.github.io/ABC_green_tech</a>
+                <img className="img-popupbox" src={thumbnailTechConsultant} alt="ABC-consultancy" />
+                <p className="project-desc">
+                    Mockup of a Green Tech consultacy website built with React and styled-components. The focus of this project
+                    is on layout design, pattern animation, transparent navigation bar, the ability to change the theme of patterns with inline functions and to re-use data for 
+                    multiple components without hardcoding.
+                </p>
+                <b>Github: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://github.com/liamdoan/ABC_green_tech")}>https://github.com/liamdoan/ABC_green_tech
+                    </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://liamdoan.github.io/ABC_green_tech")}>https://liamdoan.github.io/ABC_green_tech
+                    </a>
             </>
         )
     PopupboxManager.open({content})
@@ -108,15 +128,22 @@ function MyWork() {
     const openPopup4 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={thumbnailPhotoService} alt="ABC-photography" />
-            <p className="project-desc">Mockup of a photography service website built with React, which is focused on reusable button component with inline functions, 
-                grid layout, card info design and footer layout.
-            </p>
-            <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/visual-services")}>https://github.com/liamdoan/visual-services</a>
-            <br/>
-            <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://liamdoan.github.io/visual-services/")}>https://liamdoan.github.io/visual-services/</a>
+                <img className="img-popupbox" src={thumbnailPhotoService} alt="ABC-photography" />
+                <p className="project-desc">
+                    Mockup of a photography service website built with React, which is focused on reusable button component with inline functions, 
+                    grid layout, card info design and footer layout.
+                </p>
+                <b>Github: </b>
+                <a 
+                    className="hyper-link" 
+                    onClick={() => window.open("https://github.com/liamdoan/visual-services")}>https://github.com/liamdoan/visual-services
+                </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://liamdoan.github.io/visual-services/")}>https://liamdoan.github.io/visual-services/
+                    </a>
             </>
         )
     PopupboxManager.open({content})
@@ -135,15 +162,20 @@ function MyWork() {
     const openPopup5 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={thumbnailRestaurant} alt="ABC-restaurant" />
-            <p className="project-desc">Mockup of a high-end restaurant website built with React and styled components, 
-                which is focused on passing data to similar components to avoid hard-code, grid designing and smooth scroll function.
-            </p>
-            <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/highend_restaurant")}>https://github.com/liamdoan/highend_restaurant</a>
-            <br/>
-            <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://liamdoan.github.io/highend_restaurant")}>https://liamdoan.github.io/highend_restaurant</a>
+                <img className="img-popupbox" src={thumbnailRestaurant} alt="ABC-restaurant" />
+                <p className="project-desc">
+                    Mockup of a high-end restaurant website built with React and styled components, 
+                    which is focused on passing data to similar components to avoid hard-code, grid designing and smooth scroll function.
+                </p>
+                <b>Github: </b>
+                    <a className="hyper-link" 
+                        onClick={() => window.open("https://github.com/liamdoan/highend_restaurant")}>https://github.com/liamdoan/highend_restaurant
+                    </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a className="hyper-link" 
+                        onClick={() => window.open("https://liamdoan.github.io/highend_restaurant")}>https://liamdoan.github.io/highend_restaurant
+                    </a>
             </>
         )
     PopupboxManager.open({content})
@@ -162,28 +194,34 @@ function MyWork() {
      const openPopup6 = () => { 
         const content = (
             <>
-            <img className="img-popupbox" src={thumbnailTodoApp} alt="todo-webapp" />
-            <p className="project-desc">
-                A fullstack to-do app with CRUD functions,
-                and auto-generating different colors for different task lines. ESLint and Prettier are used to enforce coding standards and format.
-            </p>
-            <p className="project-desc">
-                - Frontend: React.
-            </p>
-            <p className="project-desc">
-                - Backend: ExpressJS, NodeJS, MongoDB.
-            </p>
-            <p className="project-desc">
-                - Testing: Jest for unit testing, Cypress for end-to-end (E2E) testing.
-            </p>
-            <p className="project-desc project-desc-special">
-                Future applying and expanding: control/admin panel for other projects.
-            </p>
-            <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/todo_app_mern")}>https://github.com/liamdoan/todo_app_mern</a>
-            <br/>
-            <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://todo-app-mern-frontendld.vercel.app/")}>https://todo-app-mern-frontendld.vercel.app/</a>
+                <img className="img-popupbox" src={thumbnailTodoApp} alt="todo-webapp" />
+                <p className="project-desc">
+                    A fullstack to-do app with CRUD functions,
+                    and auto-generating different colors for different task lines. ESLint and Prettier are used to enforce coding standards and format.
+                </p>
+                <p className="project-desc">
+                    - Frontend: React.
+                </p>
+                <p className="project-desc">
+                    - Backend: ExpressJS, NodeJS, MongoDB.
+                </p>
+                <p className="project-desc">
+                    - Testing: Jest for unit testing, Cypress for end-to-end (E2E) testing.
+                </p>
+                <p className="project-desc project-desc-special">
+                    Future applying and expanding: control/admin panel for other projects.
+                </p>
+                <b>Github: </b>
+                    <a
+                        className="hyper-link" 
+                        onClick={() => window.open("https://github.com/liamdoan/todo_app_mern")}>https://github.com/liamdoan/todo_app_mern
+                    </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://todo-app-mern-frontendld.vercel.app/")}>https://todo-app-mern-frontendld.vercel.app/
+                    </a>
             </>
         )
     PopupboxManager.open({content})
@@ -202,20 +240,29 @@ function MyWork() {
      const openPopup7 = () => {
         const content = (
             <>
-            <img className="img-popupbox" src={thumbnailZarosenStore} alt="Zarosen-online-store" />
-            <p className="project-desc">
-                A full-stak online store website  </p>
-            <p className="project-desc">- Front-end: React, Redux, styled-components.</p>
-            <p className="project-desc">- Back-end: NodeJs, MongoDB. </p>
-            <p className="project-desc">The focus is on: optimal responsive design, filter function (categories, size, color), state management for front-end; log-in, log-out functions, send and store data (user info, product info) to database, payment with Stripe for back-end.
+                <img className="img-popupbox" src={thumbnailZarosenStore} alt="Zarosen-online-store" />
+                <p className="project-desc">
+                    A full-stak online store website.</p>
+                <p className="project-desc">
+                    - Front-end: React, Redux, styled-components.
                 </p>
-
-           
-            <b>Github:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://github.com/liamdoan/zarosen-store-full-stack")}>https://github.com/liamdoan/zarosen-store-full-stack</a>
-            <br/>
-            <b>Live demo:</b> <a className="hyper-link" 
-                                onClick={() => window.open("https://zarosen-store-to-push-frontend.vercel.app/")}>https://zarosen-store-to-push-frontend.vercel.app/</a>
+                <p className="project-desc">
+                    - Back-end: NodeJs, MongoDB.
+                </p>
+                <p className="project-desc">
+                    The focus is on: optimal responsive design, filter function (categories, size, color), state management for front-end; log-in, log-out functions, send and store data (user info, product info) to database, payment with Stripe for back-end.
+                </p>
+                <b>Github: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://github.com/liamdoan/zarosen-store-full-stack")}>https://github.com/liamdoan/zarosen-store-full-stack
+                    </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://zarosen-store-to-push-frontend.vercel.app/")}>https://zarosen-store-to-push-frontend.vercel.app/
+                    </a>
             </>
         )
     PopupboxManager.open({content})
