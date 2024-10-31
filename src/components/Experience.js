@@ -65,7 +65,7 @@ const Experience = () => {
                                 <li className="dot">
                                 </li>
                                 <li className="li-info">
-                                    Refactor, maintain ReactJS codebases, achieved 8-12% improvement in performance,
+                                    Refactor, maintain ReactJS codebases, achieved 4-8% improvement in performance,
                                     accessibility (WCAG), scalability, aimed to better readability, simplify future
                                     enhancement and facilitate easier maintenance.
                                 </li>
