@@ -6,6 +6,8 @@ import AdobeLogo from '../img/logo/adobe-logo-1.svg'
 import JSTSLogo from '../img/logo/logo-jsts.png'
 import MongoLogo from '../img/logo/logo-mongo.svg'
 import VagrantLogo from '../img/logo/logo-vagrant.png'
+import JestLogo from '../img/logo/logo-jest.svg'
+import CypressLogo from '../img/logo/logo-cypress.svg'
 import './Services.css'
 
 const Services = () => {
@@ -149,6 +151,36 @@ const Services = () => {
                                     </div>
                                     <h3>MongoDB</h3>
                                     {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-4"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-jest ${theme}`}>
+                                    <div className="icon-wrap">
+                                        <img className="icon-jest" src={JestLogo} alt="jest-logo" />
+                                    </div>
+                                    <h3>Jest</h3>
+                                    {/* <p>Unit and integration testing</p> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-4"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-cypress ${theme}`}>
+                                    <div className="icon-wrap">
+                                        <img className="icon-cypress" src={CypressLogo} alt="cypress-logo" />
+                                    </div>
+                                    <h3>Cypress</h3>
+                                    {/* <p>End to end testing</p> */}
                                 </div>
                             </div>
                         </div>
