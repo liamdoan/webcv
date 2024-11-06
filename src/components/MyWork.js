@@ -257,7 +257,7 @@ function MyWork() {
                 <b>Github: </b>
                     <a 
                         className="hyper-link" 
-                        onClick={() => window.open("https://github.com/liamdoan/zarosen-store-full-stack")}>https://github.com/liamdoan/zarosen-store-full-stack
+                        onClick={() => window.open("https://github.com/liamdoan/zarosen-store-to-push")}>https://github.com/liamdoan/zarosen-store-to-push
                     </a>
                 <br/>
                 <b>Live demo: </b>
