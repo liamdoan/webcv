@@ -173,16 +173,16 @@
 
 .services-row {
   position: relative;
-  border-radius: 20px;
   padding: 5px;
   z-index: 2;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .services-row.light {
   background-color: white;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
 }
 .services-row.dark {
+  border-radius: 20px;
   background-color: var(--dark-theme-black);
   box-shadow:
     7px 7px 25px black, 

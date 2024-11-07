@@ -60,15 +60,15 @@
   margin-left: 20px;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  border-radius: 20px;
   transition: 0.3s ease-in-out;
   z-index: 3;
 }
 .about-wrap.light {
   background-color: white;
-  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
 }
 .about-wrap.dark {
+  border-radius: 20px;
   background-color: var(--dark-theme-black);
   box-shadow:
     3px 3px 25px rgba(0, 0, 0, 1),

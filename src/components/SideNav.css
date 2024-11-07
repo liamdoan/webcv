@@ -34,10 +34,12 @@
   height: 100%;
   max-height: 55px;
   max-width: 55px;
-  border-radius: 12px;
   margin: 15px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+}
+.sidenav-github-logo.dark {
+  border-radius: 12px;
 }
 
 .sidenav-github-logo:hover {
@@ -49,10 +51,12 @@
   width: 100%;
   max-height: 55px;
   max-width: 55px;
-  border-radius: 12px;
   margin: 15px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+}
+.sidenav-linkedin-logo.dark {
+  border-radius: 12px;
 }
 
 .sidenav-linkedin-logo:hover {
