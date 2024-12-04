@@ -278,6 +278,9 @@
   padding: 0;
   margin: 0 0 2px 0;
 }
+.sub-span {
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
 .project-desc-special {
   font-style: italic;
 }
