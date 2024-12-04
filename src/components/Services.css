@@ -218,6 +218,7 @@
 .box-node,
 .box-express,
 .box-mongo,
+.box-mysql,
 .box-jest,
 .box-cypress,
 .box-vagrant,
@@ -245,6 +246,7 @@
 .box-node.light,
 .box-express.light,
 .box-mongo.light,
+.box-mysql.light,
 .box-jest.light,
 .box-cypress.light,
 .box-vagrant.light,
@@ -262,6 +264,7 @@
 .box-node.dark,
 .box-express.dark,
 .box-mongo.dark,
+.box-mysql.dark,
 .box-jest.dark,
 .box-cypress.dark,
 .box-vagrant.dark,
@@ -307,6 +310,10 @@
 .box-mongo {
   /* background: rgb(77, 179, 61); */
   border-bottom: 15px solid rgb(77, 179, 61);
+}
+.box-mysql {
+  /* background: rgb(77, 179, 61); */
+  border-bottom: 15px solid #00678c;
 }
 .box-jest {
   /* background: #2E71E5; */
@@ -412,6 +419,15 @@
   height: 50px;
 }
 
+.icon-mysql {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47%, -50%);
+  width: 35px;
+  height: 35px;
+}
+
 .icon-jest {
   position: absolute;
   top: 50%;
@@ -474,6 +490,7 @@
 .box-node::before,
 .box-express::before,
 .box-mongo::before,
+.box-mysql::before,
 .box-jest::before,
 .box-cypress::before,
 .box-vagrant::before,
@@ -514,6 +531,9 @@
 }
 .box-mongo.light::before {
   background: linear-gradient(to bottom, white, white, rgb(77, 179, 61) 80%, rgb(218, 217, 217));
+}
+.box-mysql.light::before {
+  background: linear-gradient(to bottom, white, white, #00678c 80%, rgb(218, 217, 217));
 }
 .box-jest.light::before {
   background: linear-gradient(to bottom, white, white, #9a2649 80%, rgb(218, 217, 217));
@@ -561,6 +581,9 @@
 .box-mongo.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), rgb(77, 179, 61) 70%, rgb(218, 217, 217));
 }
+.box-mysql.dark::before {
+  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #00678c 70%, rgb(218, 217, 217));
+}
 .box-jest.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #9a2649 70%, rgb(218, 217, 217));
 }
@@ -591,6 +614,7 @@
 .box-node:hover::before,
 .box-express:hover::before,
 .box-mongo:hover::before,
+.box-mysql:hover::before,
 .box-jest:hover::before,
 .box-cypress:hover::before,
 .box-vagrant:hover::before,
@@ -609,6 +633,7 @@
 .box-node:hover,
 .box-express:hover,
 .box-mongo:hover,
+.box-mysql:hover,
 .box-jest:hover,
 .box-cypress:hover,
 .box-vagrant:hover,
@@ -632,6 +657,7 @@
 .box-node:hover,
 .box-express:hover,
 .box-mongo:hover,
+.box-mysql:hover,
 .box-jest:hover,
 .box-cypress:hover,
 .box-vagrant:hover,
@@ -646,6 +672,7 @@
 .box-node:hover .icon-wrap,
 .box-express:hover .icon-wrap-express,
 .box-mongo:hover .icon-wrap,
+.box-mysql:hover .icon-wrap,
 .box-jest:hover .icon-wrap,
 .box-cypress:hover .icon-wrap,
 .box-vagrant:hover .icon-wrap,
