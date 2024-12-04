@@ -203,7 +203,10 @@ function MyWork() {
                     - Frontend: React.
                 </p>
                 <p className="project-desc">
-                    - Backend: ExpressJS, NodeJS, MongoDB.
+                    - Backend: ExpressJS, NodeJS.
+                </p>
+                <p className="project-desc">
+                    - Database: MySQL/MongoDB.
                 </p>
                 <p className="project-desc">
                     - Testing: Jest for unit testing, Cypress for end-to-end (E2E) testing.
@@ -212,8 +215,16 @@ function MyWork() {
                     Future applying and expanding: control/admin panel for other projects.
                 </p>
                 <b>Github: </b>
+                <br />
+                <span className='sub-span'>- with mySQL database: </span>
                     <a
-                        className="hyper-link" 
+                        className="hyper-link"
+                        onClick={() => window.open("https://github.com/liamdoan/todo_app_mysql_ern")}>https://github.com/liamdoan/todo_app_mysql_ern
+                    </a>
+                <br />
+                <span className='sub-span'>- with MongoDB database: </span>
+                    <a
+                        className="hyper-link"
                         onClick={() => window.open("https://github.com/liamdoan/todo_app_mern")}>https://github.com/liamdoan/todo_app_mern
                     </a>
                 <br/>
@@ -305,7 +316,7 @@ function MyWork() {
                                 onClick={openPopup6}
                                 src={thumbnailTodoApp}
                                 text="To-do Web App"
-                                label="MERN/ Jest/ Cypress"
+                                label="ERN/ Jest/ Cypress /mySQL/ MongoDB"
                                 path="/services"
                                 number="6"
                                 /> 
