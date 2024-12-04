@@ -211,6 +211,7 @@
 
 /* ICONS */
 .box-react,
+.box-nextjs,
 .box-js,
 .box-html,
 .box-css,
@@ -237,6 +238,7 @@
   transition: 0.3s ease-in-out;
 }
 .box-react.light,
+.box-nextjs.light,
 .box-js.light,
 .box-html.light,
 .box-css.light,
@@ -253,6 +255,7 @@
   background: white;
 }
 .box-react.dark,
+.box-nextjs.dark,
 .box-js.dark,
 .box-html.dark,
 .box-css.dark,
@@ -272,6 +275,14 @@
 .box-react {
   /* background: #46d0f3; */
   border-bottom: 15px solid #46d0f3;
+}
+.box-nextjs.light {
+  /* background: #2E71E5; */
+  border-bottom: 15px solid #000000;
+}
+.box-nextjs.dark {
+  /* background: #2E71E5; */
+  border-bottom: 15px solid #ffffff;
 }
 .box-js {
   /* background: #3178c6; */
@@ -367,6 +378,15 @@
   transform: translate(-50%, -50%);
 }
 
+.icon-nextjs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  width: 40px;
+  height: auto;
+}
+
 .icon-jsts {
   position: absolute;
   top: 50%;
@@ -447,6 +467,7 @@
 
 /* -----------HOVER------------- */
 .box-react::before,
+.box-nextjs::before,
 .box-js::before,
 .box-html::before,
 .box-css::before,
@@ -472,6 +493,9 @@
 
 .box-react.light::before {
   background: linear-gradient(to bottom, white, white, #61dbfb 80%, whitesmoke);
+}
+.box-nextjs.light::before {
+  background: linear-gradient(to bottom, white, white, #000000 80%, rgb(218, 217, 217));
 }
 .box-js.light::before {
   background: linear-gradient(to bottom, white, white, #3178c6 80%, whitesmoke);
@@ -516,6 +540,9 @@
 .box-react.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #61dbfb 70%, whitesmoke);
 }
+.box-nextjs.dark::before {
+  background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #ffffff 70%, rgb(218, 217, 217));
+}
 .box-js.dark::before {
   background: linear-gradient(to bottom, var(--dark-theme-black-light), var(--dark-theme-black-light), #3178c6 70%, whitesmoke);
 }
@@ -557,6 +584,7 @@
 }
 
 .box-react:hover::before,
+.box-nextjs:hover::before,
 .box-js:hover::before,
 .box-html:hover::before,
 .box-css:hover::before,
@@ -574,6 +602,7 @@
 }
 
 .box-react:hover,
+.box-nextjs:hover,
 .box-js:hover,
 .box-html:hover,
 .box-css:hover,
@@ -593,10 +622,12 @@
 }
 
 .box-react:hover,
+.box-nextjs.dark:hover,
 .box-js:hover,
 .box-html:hover {
   color: black;
 }
+.box-nextjs:hover,
 .box-css:hover,
 .box-node:hover,
 .box-express:hover,
