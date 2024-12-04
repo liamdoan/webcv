@@ -8,6 +8,7 @@ import MongoLogo from '../img/logo/logo-mongo.svg'
 import VagrantLogo from '../img/logo/logo-vagrant.png'
 import JestLogo from '../img/logo/logo-jest.svg'
 import CypressLogo from '../img/logo/logo-cypress.svg'
+import NextJSLogo from '../img/logo/logo-nextjs.png'
 import './Services.css'
 
 const Services = () => {
@@ -60,6 +61,21 @@ const Services = () => {
                                     </div>
                                     <h3>React</h3>
                                     {/* <p>Create manageable sites with multiple reusable components</p> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-4"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-nextjs ${theme}`}>
+                                    <div className="icon-wrap">
+                                        <img className="icon-nextjs" src={NextJSLogo} alt="nextjs-logo" />
+                                    </div>
+                                    <h3>NextJS</h3>
+                                    {/* <p>Framework NextJS</p> */}
                                 </div>
                             </div>
                         </div>
