@@ -9,6 +9,7 @@ import VagrantLogo from '../img/logo/logo-vagrant.png'
 import JestLogo from '../img/logo/logo-jest.svg'
 import CypressLogo from '../img/logo/logo-cypress.svg'
 import NextJSLogo from '../img/logo/logo-nextjs.png'
+import MySqlLogo from '..//img/logo/logo-mysql.svg'
 import './Services.css'
 
 const Services = () => {
@@ -166,6 +167,21 @@ const Services = () => {
                                         <img className="icon-mongo" src={MongoLogo} alt="mongo-logo" />
                                     </div>
                                     <h3>MongoDB</h3>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-4"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-mysql ${theme}`}>
+                                    <div className="icon-wrap">
+                                        <img className="icon-mysql" src={MySqlLogo} alt="mysql-logo" />
+                                    </div>
+                                    <h3>MySQL</h3>
                                     {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
