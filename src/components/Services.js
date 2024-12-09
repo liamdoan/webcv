@@ -10,6 +10,7 @@ import JestLogo from '../img/logo/logo-jest.svg'
 import CypressLogo from '../img/logo/logo-cypress.svg'
 import NextJSLogo from '../img/logo/logo-nextjs.png'
 import MySqlLogo from '..//img/logo/logo-mysql.svg'
+import TailWindLogo from '../img/logo/logo-tailwind.png'
 import './Services.css'
 
 const Services = () => {
@@ -122,6 +123,21 @@ const Services = () => {
                                     </div>
                                     <h3>CSS/SASS</h3>
                                     {/* <p>Clothe the skeleton with striking and aesthetic design</p> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2 col-md-4 col-sm-4"
+                                data-aos='flip-left'
+                                data-aos-duration="1000"
+                                data-aos-once="true"
+                                data-aos-delay='600'>
+                            <div className={`box-wrap ${theme}`}>
+                                <div className={`box-tailwind ${theme}`}>
+                                    <div className="icon-wrap">
+                                        <img className="icon-tailwind" src={TailWindLogo} alt="tailwind-logo" />
+                                    </div>
+                                    <h3>Tailwind CSS</h3>
+                                    {/* <p>Make the sites become more eye-catching and user-friendly in design</p> */}
                                 </div>
                             </div>
                         </div>
