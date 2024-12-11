@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useTheme } from '../context/ThemeContext'
 import MyWorkCardItem from './MyWorkCardItem'
+import thumbnailCabBooking from '../img/thumbnails/thumbnail-cab-booking.jpg'
 import thumbnailZarosenStore from '../img/thumbnails/thumbnail-zarosen.jpg'
 import thumbnailTechConsultant from '../img/thumbnails/thumbnail-tech-consultant.jpg'
 import thumbnailRestaurant from '../img/thumbnails/thumbnail-restaurant.jpg'
@@ -290,6 +291,52 @@ function MyWork() {
         fadeinSpeed: 500
     };
 
+    // -----------------------------Project 8
+    const openPopup8 = () => {
+        const content = (
+            <>
+                <img className="img-popupbox" src={thumbnailCabBooking} alt="Splash-cab-booking" />
+                <p className="project-desc">
+                    A beta version of Splash cab booking app built with NextJS, Tailwind, MapLibre for map, and MongoDB for database. 
+                    Traveling route, price calculation are handled and displayed after user's selection. 
+                    This project is initially for private event, which is suitable for organization having their own cars/cabs to transport guests and attendees.
+                </p>
+                <p className="project-desc">Rides are filtered by day, sorted by soonest-latest time order.</p>
+                <p className="project-desc">Users can see booking form. Drivers/admins can see driver view, where detail of rides are displayed.</p>
+                <p className="project-desc">
+                    - Front-end: Next.JS, Tailwind, MapLibre.
+                </p>
+                <p className="project-desc">
+                    - Back-end: Next.JS, MongoDB.
+                </p>
+                <p className="project-desc project-desc-special">
+                    To be updated: admin panel to display and collect all data, analysis.
+                </p>
+                <b>Github: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://github.com/liamdoan/taxi-booking")}>https://github.com/liamdoan/taxi-booking
+                    </a>
+                <br/>
+                <b>Live demo: </b>
+                    <a 
+                        className="hyper-link" 
+                        onClick={() => window.open("https://splash-cab-booking.vercel.app/")}>https://splash-cab-booking.vercel.app/
+                    </a>
+            </>
+        )
+    PopupboxManager.open({content})
+};
+
+    const configProject8 = {
+        titleBar: {
+            enable: true,
+            text: "",
+        },
+        fadeIn: true,
+        fadeinSpeed: 500
+    };
+
     return ( 
         <div id="portfolio" className={`cards ${theme}`}>
             {/* <div className="mywork-content"> */}
@@ -304,6 +351,14 @@ function MyWork() {
                     <ul className="cards-items"
                         // style={{transform: `translateY(${offsetY * 0.05}px)`}}
                     >
+                            <MyWorkCardItem 
+                                onClick={openPopup8}
+                                src={thumbnailCabBooking}
+                                text="SPLASH Cab Booking"
+                                label="Next.JS/ MongoDB/ MapLibre"
+                                path="/services"
+                                number="8"
+                                /> 
                             <MyWorkCardItem 
                                 onClick={openPopup7}
                                 src={thumbnailZarosenStore}
@@ -375,6 +430,7 @@ function MyWork() {
             <PopupboxContainer {...configProject5}/>
             <PopupboxContainer {...configProject6}/>
             <PopupboxContainer {...configProject7}/>
+            <PopupboxContainer {...configProject8}/>
         </div>
     )
 }
