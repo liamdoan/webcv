@@ -35,47 +35,38 @@ const Experience = () => {
                                 <li className="dot">
                                 </li>
                                 <li className="li-info">
-                                    Oversee Frontend development across 4 legacy/modern platforms for legacy OVP product.
+                                    Oversee frontend development for the core Dream Broker Studio product across 4 platforms in an agile 
+                                    environment, including 1 legacy system (EmberJS), 3 modern platforms (TypeScript, ReactJS). 
                                 </li>
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
                                 <li className="li-info">
-                                    Directly contributing to 6% in product sales with engineering new, scalable,
-                                    maintainable TypeScript-based React solutions and UI/UX from designers.
+                                    Oversee frontend development in 1 React project which had impactful contribution on Q1 2024. 
                                 </li>
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
                                 <li className="li-info">
-                                    Engineer, build React library with Vite for high-efficiency.
+                                    Develop a core, reusable React-based video player component library, shared across all products and 2+ 
+                                    customers’ platform.
                                 </li>
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
                                 <li className="li-info">
-                                    Develop independent React library from NPM package to be used across 2 products and
-                                    1 customers’ platform, deeply focusing on Modular Architecture, Reusability.
+                                    Engage in code review process, follow SCRUM methodology. 
                                 </li>
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
                                 <li className="li-info">
-                                    Refactor, maintain ReactJS codebases, achieved 4-8% improvement in performance,
-                                    accessibility (WCAG), scalability, aimed to better readability, simplify future
-                                    enhancement and facilitate easier maintenance.
-                                </li>
-                            </div>
-                            <div className="list-info">
-                                <li className="dot">
-                                </li>
-                                <li className="li-info">
-                                    Maintain, implement 5 main features, debug 15+ bugs for legacy/modern Online Video
-                                    Platform (OVP) with EmberJS, FTL, ReactJS, Apache Ant for frontend, backend.
+                                    My role extends to Microsoft SharePoint, where I develop SharePoint webpart to embed Dream Broker videos 
+                                    using SPFx framework, and expand backend service with Java. 
                                 </li>
                             </div>
                             <div className='skill-keywords-info'>
@@ -100,30 +91,30 @@ const Experience = () => {
                             <p className="work-period">
                                 May 2020 - November 2020
                             </p>
-                            <p className="work-desc">The role helped Witview’s 
-                            customers witness 7.5% uplift in conversion rate and some reach to 30%. The results were
-                            based on extensive A/B testing performed with each customer. This position focused on: </p>
+                            <p className="work-desc">
+                                Witview startup helps clients archieve 7.5% uplift in conversion rate and some reach to 30%. The results were
+                                based on extensive A/B testing performed with each customer. This position focused on: </p>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
-                                <li className="li-info">managing & sanitizing the collected data</li>
+                                <li className="li-info">Analyze and optimize data collection method for better customer experience.</li>
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
-                                <li className="li-info">developing methods of collecting and utilizing new data from customers' behaviour</li>
+                                <li className="li-info">Work closely with internal measuring tool and direct customer satisfaction audit, refine how data is gathered 
+                                and interpreted. </li>
 
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
-                                <li className="li-info">supervising and managing quality of data</li>
-
+                                <li className="li-info">Supervise and manage quality of incoming data, fix and report anomalies to ensure accuracy.</li>
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
-                                <li className="li-info">creating instruction material and guiding new trainees</li>
+                                <li className="li-info">Mentor new trainees, create instruction materials to ensure smooth onboard and work adoption.</li>
                             </div>
                             <div className='skill-keywords-info'>
                                 <span className='title-skill-keywords-info'>Skills: </span>
@@ -148,20 +139,25 @@ const Experience = () => {
                                 August 2018 - January 2019
                             </p>
                             <p className="work-desc">
-                                The goal is to construct a proposal of a small-scale energy efficiency ecosystem for a public building. The role focused on:
+                                As part of an academic team, we construct a proposal of a small-scale energy efficiency ecosystem for a public building, 
+                                aiming to research the ability to integrate solar power with other renewable energy resources. This bridges the gap 
+                                between research and practical application: 
                             </p>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
                                 <div className="li-and-sub-info">
-                                    <li className="li-info">designing the prototype of user interface (UI) for displaying data</li>
+                                    <li className="li-info">Design UI prototype to display energy data, make insights more accessible and user-friendly.</li>
                                     {/*<li className="sub-li-info">Front End Development Libraries, <span className="secondary-text">May 2021</span></li>*/}
                                 </div>
                             </div>
                             <div className="list-info">
                                 <li className="dot">
                                 </li>
-                                <li className="li-info">researching the ability to integrate solar power with other renewable energy sources</li>
+                                <li className="li-info">
+                                    Collaborate in a team of 4, directly discuss with professor. This experience strengthens my ability to conduct 
+                                    technical research, communicate findings, and contribute to sustainable energy solutions.
+                                </li>
                             </div>
                             <div className='skill-keywords-info'>
                                 <span className='title-skill-keywords-info'>Skills: </span>
