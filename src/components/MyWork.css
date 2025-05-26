@@ -105,11 +105,11 @@
 }
 .overlay.light{
   border-radius: 0%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .overlay.dark{
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 0px 10px rgba(109, 123, 133, 0.1);
 }
 
